@@ -1,0 +1,2 @@
+Today i have learned that how can i use git to manage my project version controls
+And also some basic commands of git
