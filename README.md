@@ -1,4 +1,4 @@
 # InnoInternRepo
 
-name = soumya joshi
+soumya joshi
 enrollment no = 53
