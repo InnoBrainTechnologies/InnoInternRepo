@@ -1,5 +1,5 @@
 
-# My Inteernship record of 15  days
+# My Internship record of 15  days 👨‍💻
 
 Hey there, I'm Sujal Patel, and this repository is a window into my exciting journey as an intern at Innobrain Technologies. Here, you'll find a collection of daily entries where I share my experiences, challenges, and victories. I've also documented the projects I've been fortunate to work on, detailing the goals, technologies, and outcomes. You'll discover how I've tackled errors and enhancements, learning valuable lessons along the way. Quality takes precedence over quantity here, so expect clear and concise documentation, enhanced with visuals like screenshots and diagrams. Join me as I reflect on my growth, celebrate accomplishments, and outline my future plans. Your feedback and collaboration are more than welcome – let's make this journey unforgettable!
 
