@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="icon" type="image/jpg" href="img1.png">
+    <style>
+        table,th,td
+    {
+        border-style: solid;
+        border-radius:20px;
+        border-color:crimson;
+        padding-top:5px;
+        padding-bottom:5px;
+        padding-left:5px;
+        padding-right:5px;
+        border-spacing:20px;        
+    }
+    tr:nth-child(even)
+        {
+            background-color:blue;
+            color:white;
+        }
+    td:nth-child(odd),th:nth-child(even)
+        {
+            background-color: aquamarine;
+        }
+    tr:hover
+        {
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a Table</h1>
+
+    <table>
+        <tr>
+            <th>monday</th>
+            <th>tuesday</th>
+            <th>wednusday</th>
+            <th>thursday</th>
+            <th>friday</th>
+            <th>satarday</th>
+            <th>sunday</th>
+        </tr>
+        <tr>
+            <th>Maths</th>
+            <th>Maths</th>
+            <th>SS</th>
+            <th>Maths</th>
+            <th>English</th>
+            <th>English</th>
+            <th>SS</th>
+        </tr>
+        <tr>
+            <th>English</th>
+            <th>English</th>
+            <th>GK</th>
+            <th>Physics</th>
+            <th>Chemistry</th>
+            <th>Biology</th>
+            <th>PT</th>
+        </tr>
+        <tr>
+            <th>Maths</th>
+            <th>Physics</th>
+            <th>SS</th>
+            <th>English</th>
+            <th>Physics</th>
+            <th>Chemistry</th>
+            <th>Biology</th>
+        </tr>
+    </table>
+</body>
+</html>
