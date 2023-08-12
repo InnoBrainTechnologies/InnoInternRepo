@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     h1
+     {
+        color: rgb(255, 255, 255);
+        background-color:orange;
+        text-align: center;
+     }
+     h2
+     {
+        color: whitesmoke;
+        background-color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+     a
+     {
+         color: bisque;
+         background-color:green;
+         text-align: center;
+         font-size: large;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+     a:hover
+     {
+        color: black;
+        background-color: aqua;
+        text-decoration: none;
+     }
+     body
+     {
+        background-color: black;
+     }
+    </style>
+
+</head>
+<body>
+    <h1>internship day-2</h1><br><br>
+    <h2>first page</h2><br>
+    <a href="file-2.html">click heare for next page</a>
+</body>
+</html>
