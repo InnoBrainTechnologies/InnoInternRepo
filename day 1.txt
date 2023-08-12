@@ -1,0 +1,6 @@
+Today i have learned
+
+1) How to download and setup visual studio code and setup environment for git
+2) How can i use git to manage my project version controls
+3) How can i create my own branch and contribute to a project
+4) How can i use HTML snippets to speed yp my productivity 
