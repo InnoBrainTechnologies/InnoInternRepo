@@ -14,3 +14,4 @@ I'm a versatile developer comfortable with languages like C, C++, Python, and a 
 
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/psychosniper_)
 
+[![Github](https://img.shields.io/badge/Github-171515?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SujalPatel75)
