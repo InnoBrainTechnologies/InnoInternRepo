@@ -1,0 +1,8 @@
+Today i have learned
+
+1) How to create one page and apply Inline CSS.
+2) How to create one another page in which you have to apply Internal CSS.
+3) How to create one another page in which you have to apply External CSS.
+4) How to create a bookmark with an ID and hyperlink.
+5) How to create an ID for a specific element and use it in CSS and JavaScript.
+6) How to create a class for specific elements and use it in CSS and JavaScript.
