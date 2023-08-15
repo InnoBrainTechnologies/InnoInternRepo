@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Designed by helly</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Day_04_task.css">
+    <style>
+        .custom-bg {
+            background-color: #ffffff; /* Set background to white */
+        }
+        .custom-color {
+            color: #000000; /* Set text color to black */
+        }
+        .task-box {
+            border: 2px solid #000000; /* Set border color to black */
+            background-color: #dd3fc3;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .blue-link {
+            color: #000000; /* Set link color to black */
+            text-decoration: none;
+        }
+        .blue-link:hover {
+            text-decoration: underline;
+        }
+        .changed-color {
+            color: #000000; /* Set changed text color to black */
+        }
+    </style>
+</head>
+<body class="custom-bg">
+    <div class="container text-center">
+        <h1 class="custom-color"> 4th day all task </h1>
+        
+        <!-- Task 1: Inline CSS -->
+        <div class="task-box">
+            <h2 style="color: #000000;">Task 1</h2>
+            <p style="font-size: 18px;">This is an example of inline CSS.</p>
+        </div>
+
+        <!-- Task 2: Internal CSS -->
+        <div class="task-box">
+            <h2 style="color: #000000;">Task 2</h2>
+            <p style="font-size: 18px;">This is an example of internal CSS.</p>
+        </div>
+
+        <!-- Task 3: External CSS -->
+        <div class="task-box">
+            <h2 style="color: #000000;">Task 3</h2>
+            <p id="p1" class="changed-color">This is an example of external CSS with changed color.</p>
+        </div>
+
+        <!-- Task 4: Bookmark with ID and Hyperlink -->
+        <div class="task-box">
+            <h2 style="color: #000000;">Task 4</h2>
+            <p style="font-size: 18px;"><a class="blue-link" href="#bookmark">Go to Bookmark</a></p>
+            <p id="bookmark">This is a bookmarked section.</p>
+        </div>
+
+        <!-- Task 5: Element ID for CSS and JavaScript -->
+        <div class="task-box">
+            <h2 style="color: #000000;">Task 5</h2>
+            <p id="myElement" class="changed-color">This element has an ID with changed color.</p>
+            <script>
+                var element = document.getElementById("myElement");
+                element.style.color = "#000000"; /* Set changed color to black */
+            </script>
+        </div>
+
+        <!-- Task 6: Class for CSS and JavaScript -->
+        <div class="task-box">
+            <h2 style="color: #000000;">Task 6: Class for CSS and JavaScript</h2>
+            <p class="myClass changed-color">This element has a class with changed color.</p>
+            <script>
+                var elements = document.getElementsByClassName("myClass");
+                for (var i = 0; i < elements.length; i++) {
+                    elements[i].style.fontSize = "24px";
+                    elements[i].style.color = "#000000"; /* Set changed color to black */
+                }
+            </script>
+        </div>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </body>
+        </html>        
