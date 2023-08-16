@@ -1,0 +1,27 @@
+1) How to create HTML pages for all the properties you have learned today and upload them to your branch on GitHub.
+
+2) How to implement responsive design principles to ensure your webpage works well across various devices and screen sizes.
+
+3) How to create a 12-column grid view layout for your webpage.
+
+4) How to use different position property values to control the positioning of elements:
+   - How to use the position: static property.
+   - How to use the position: relative property.
+   - How to use the position: fixed property.
+   - How to use the position: absolute property.
+
+5) How to control content overflow within elements using the overflow property:
+   - How to use overflow: visible.
+   - How to use overflow: hidden.
+   - How to use overflow: scroll.
+   - How to use overflow: auto.
+
+6) How to control element alignment within containers using the float property:
+   - How to use float: left.
+   - How to use float: right.
+   - How to use float: none.
+   - How to use float: inherit.
+
+7) How to make your website responsive using media queries:
+   - How to use media queries with @media screen and (max-width: 700px) to adapt your webpage's layout for smaller screens.
+   - How to use media queries with @media screen and (min-width: 400px) to enhance your webpage's layout for larger screens.
