@@ -1,0 +1,18 @@
+body
+{
+    text-align: center;
+    color: black;
+    background-color: mediumaquamarine;
+}
+h2
+{
+    color:mintcream;
+    background-color: rgb(165, 42, 140);
+
+}
+h2:hover
+{
+    color: blanchedalmond;
+    background-color: black;
+    text-decoration: none;
+}
