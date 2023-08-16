@@ -1,0 +1,23 @@
+
+h1{
+   color:black;
+   background-color:aqua; 
+   padding: 5px;
+   text-align: center;
+}
+.jungle{
+    color:silver;
+    background-color: black;
+    padding: 10px;
+    border: 1px;
+    border-radius: 5px;
+    border-color:white;
+    text-align: center;
+    margin:3px;
+    text-size-adjust: 10px;
+}
+li{
+    background-color: rgb(231, 147, 194);
+    color:black;
+    
+}
