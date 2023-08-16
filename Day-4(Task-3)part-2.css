@@ -1,0 +1,27 @@
+.h1{
+   color:black;
+   background-color:aqua; 
+   padding: 5px;
+}
+.marine{
+    color:silver;
+    background-color: black;
+    padding: 10px;
+    border: 1px;
+    border-radius: 5px;
+    border-color:white;
+    text-align: center;
+    margin:3px;
+}
+.style{
+color:blue;
+    background-color: skyblue;
+    padding: 10px;
+    border: 1px;
+    border-radius: 5px;
+    border-color:white;
+    text-align: left;
+    margin:3px;
+}
+
+
