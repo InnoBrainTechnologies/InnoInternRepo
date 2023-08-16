@@ -1,0 +1,123 @@
+HP@DESKTOP-VLJN1ND MINGW64 /d/internship-1 (master)
+$ git cofing --> global user.name "ronit"
+git: 'cofing' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+HP@DESKTOP-VLJN1ND MINGW64 /d/internship-1 (master)
+$ git confing --> global user.email "devaliyaronit@gmail.com"
+git: 'confing' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+HP@DESKTOP-VLJN1ND MINGW64 /d/internship-1 (master)
+$ git init
+Reinitialized existing Git repository in D:/internship-1/.git/
+
+HP@DESKTOP-VLJN1ND MINGW64 /d/internship-1 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        global
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@DESKTOP-VLJN1ND MINGW64 /d/internship-1 (master)
+$ git add file-1.html
+
+HP@DESKTOP-VLJN1ND MINGW64 /d/internship-1 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        global
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@DESKTOP-VLJN1ND MINGW64 /d/internship-1 (master)
+$ git commit -m "first commit"
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        global
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@DESKTOP-VLJN1ND MINGW64 /d/internship-1 (master)
+$ git log
+commit fd0413bc4d751ad8eba8fd4bed1f5a8d1d2e68ca (HEAD -> master)
+Author: ronit <devaliyaronit@gmail.com>
+Date:   Fri Aug 11 10:51:12 2023 +0530
+
+    second commit
+
+HP@DESKTOP-VLJN1ND MINGW64 /d/internship-1 (master)
+$ git log -->new-1.html
+
+HP@DESKTOP-VLJN1ND MINGW64 /d/internship-1 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        global
+        new-1.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@DESKTOP-VLJN1ND MINGW64 /d/internship-1 (master)
+$ git add new-1.html
+warning: in the working copy of 'new-1.html', LF will be replaced by CRLF the next time Git touches it
+
+HP@DESKTOP-VLJN1ND MINGW64 /d/internship-1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new-1.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        global
+
+
+HP@DESKTOP-VLJN1ND MINGW64 /d/internship-1 (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+HP@DESKTOP-VLJN1ND MINGW64 /d/internship-1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new-1.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        global
+
+
+HP@DESKTOP-VLJN1ND MINGW64 /d/internship-1 (master)
+$ git commit -m "second commit"
+[master 2766d7e] second commit
+ 1 file changed, 5 insertions(+)
+ create mode 100644 new-1.html
+
+HP@DESKTOP-VLJN1ND MINGW64 /d/internship-1 (master)
+$ git log
+commit 2766d7e848ea1c615788cc1bbb892169342bf24a (HEAD -> master)
+Author: ronit <devaliyaronit@gmail.com>
+Date:   Fri Aug 11 11:31:34 2023 +0530
+
+    second commit
+
+commit fd0413bc4d751ad8eba8fd4bed1f5a8d1d2e68ca
+Author: ronit <devaliyaronit@gmail.com>
+Date:   Fri Aug 11 10:51:12 2023 +0530
+
+:
