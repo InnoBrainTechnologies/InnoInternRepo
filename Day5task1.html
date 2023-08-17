@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .menu{
+        float:left;
+        width: auto;
+        text-align: center;
+    }
+.menu a {
+   background-color: black; 
+   color: aliceblue;
+   padding: 10px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   margin-left: 2px;
+   margin-right: 2px;
+   width: 100%;
+}
+video{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    background-color: aliceblue;
+}
+.main{
+    float: left;
+    width: 20%;
+    padding: 20px;
+}
+.right{
+    background-color: chartreuse;
+    float: left;
+    width:20%;
+    padding:15px;
+    margin-top:7px;
+    text-align: center;
+}
+    @media screen and (max-width 650px){
+       .munu.main.right{
+        width: 100%;
+       }
+}
+
+</style>    
+</head>
+<body>
+<div class="menu"style="text-align: center; padding: 10px; color: black; background-color:aquamarine;">
+    <h1>About Earth</h1>
+</div>
+<div class="menu a">
+    <P>
+        Earth or the Earth is the planet on which we live. 
+        People usually say Earth when they are referring to
+        the planet as part of the universe, and the Earth
+        when they are talking about the planet as the place where we live.
+        The space shuttle returned safely to Earth.
+    </P>
+</div>
+<video style="text-align: center; padding:10px; grid-auto-flow: inherit;" controls autoplay>
+    <source src="earth.mp4">
+</video>
+</body>
+</html>
