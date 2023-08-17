@@ -1,0 +1,13 @@
+Today i have learned
+
+1) How to create a form with various input elements:
+   - How to create a textbox using <input type="text">.
+   - How to create a date input using <input type="date">.
+   - How to create radio buttons for gender using <input type="radio">.
+   - How to create checkboxes for hobbies using <input type="checkbox">.
+   - How to create a dropdown list using <select> and <option> tags.
+   - How to create a number input using <input type="number">.
+   - How to create a submit button using <input type="submit">.
+   - How to create a password input using <input type="password">.
+   - How to create an email input using <input type="email">.
+
