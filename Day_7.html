@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: darkseagreen;
+            margin-left: 30%;
+            margin-right:30%;
+            padding: 2%;
+            text-align: center;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+             
+   <center><button type="button" onclick="myfun()">click here</button></center>
+     <p id="js1"></p>
+     <p id="js2"></p>
+     <p id="js3"></p>
+     <p id="js4"></p>
+     <p id="js5"></p>
+     <p id="js6"></p>
+     <P id="js7"></P>
+     <p id="js8"></p>
+     <p id="js9"></p>
+     <p id="js10"></p>
+     <p id="js11"></p>
+
+    <script>
+
+      const  myobj={"subname":"c++","subcoad":2260403,"uni":"GTU"}
+      myobj.subname="python";
+      myobj.rec="99";
+    //   document.getElementById('p8').innerHTML=myobj.subname;                //obj
+    //   document.getElementById('p9').innerHTML=myobj.subcoad;
+    //   document.getElementById('p10').innerHTML=myobj.uni;
+    //   document.getElementById('p11').innerHTML=myobj.rec;
+      
+       
+        const hobbies=["swwiming","australiya","bike"];                     //array
+        // document.getElementById('p7').innerHTML=hobbies;
+
+        let person="karan",des="Manager",salary=45000;
+        // document.getElementById('p4').innerHTML=person;
+        // document.getElementById('p5').innerHTML=des;                       
+        // document.getElementById('p6').innerHTML=salary;
+        let x,y,z;
+         x=12;
+         y=11;
+         z=x+y;
+
+         function myfun()
+        {
+            document.getElementById('js1').innerHTML=z;                            //calcu
+            document.getElementById('js2').innerHTML="hello java-script";          //string meseg
+            document.getElementById('js3').innerHTML="how are you";                //string meseg
+            document.getElementById('js4').innerHTML=person;                       //var-dec
+            document.getElementById('js5').innerHTML=des;                          //var-dec
+            document.getElementById('js6').innerHTML=salary;                       //var-dec
+            document.getElementById('js7').innerHTML=hobbies[1];                   //array
+            document.getElementById('js8').innerHTML=myobj.subname;               //obj
+            document.getElementById('js9').innerHTML=myobj.subcoad;               //obj               
+            document.getElementById('js10').innerHTML=myobj.uni;                  //obj
+            document.getElementById('js11').innerHTML=myobj.rec;                  //obj
+        }
+</script>
+</body>
+</html>
