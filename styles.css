@@ -9,7 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #813d09;
+    background-color: #760606;
     color: #fff;
 }
 
@@ -27,14 +27,17 @@ nav a {
     color: #fff;
 }
 
-.styled-table {
-    width: 80%;
+.content {
+    max-width: 800px;
     margin: 20px auto;
-    border-collapse: collapse;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
 }
 
-.styled-table th, .styled-table td {
-    border: 1px solid #ff0000;
-    padding: 8px;
+footer {
     text-align: center;
+    padding: 10px;
+    background-color: #760606;
+    color: #fff;
 }
