@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color:darkgrey;
+            margin-left: 30%;
+            margin-right: 30%;
+            padding: 2%;
+            text-align: center;
+            border: 2px solid rgb(51, 153, 141);
+        }
+    </style>
+</head>
+<body>
+             
+<center><button type="button" onclick="myfun()">click here</button></center>
+     <p id="p1"></p>
+     <p id="p2"></p>
+     <p id="p3"></p>
+     <p id="p4"></p>
+     <p id="p5"></p>
+     <p id="p6"></p>
+     <P id="p7"></P>
+     <p id="p8"></p>
+     <p id="p9"></p>
+     <p id="p10"></p>
+     <p id="p11"></p>
+
+    <script>
+
+      const  myobj={"subname":"java","subcoad":3350701,"uni":"GTU"}
+      myobj.subname="python";
+      myobj.rec="83";
+    //   document.getElementById('p8').innerHTML=myobj.subname;                //obj
+    //   document.getElementById('p9').innerHTML=myobj.subcoad;
+    //   document.getElementById('p10').innerHTML=myobj.uni;
+    //   document.getElementById('p11').innerHTML=myobj.rec;
+      
+       
+        const hobbies=["traveling","INDIA","car"];                     //array
+        // document.getElementById('p7').innerHTML=hobbies;
+
+        let person="Raj",des="Manager",salary=50000;
+        // document.getElementById('p4').innerHTML=person;
+        // document.getElementById('p5').innerHTML=des;                       
+        // document.getElementById('p6').innerHTML=salary;
+        let x,y,z;
+         x=9;
+         y=11;
+         z=x+y;
+        //  document.getElementById('p1').innerHTML=z;
+
+         function myfun()
+        {
+            document.getElementById('p1').innerHTML=z;                            //calculator
+            document.getElementById('p2').innerHTML="hello !";                    //function name 
+            document.getElementById('p3').innerHTML="how are you";                //function name
+            document.getElementById('p4').innerHTML=person;                       //variable name
+            document.getElementById('p5').innerHTML=des;                          //variable name
+            document.getElementById('p6').innerHTML=salary;                       //variable name
+            document.getElementById('p7').innerHTML=hobbies[1];                   //array
+            document.getElementById('p8').innerHTML=myobj.subname;                //obj
+            document.getElementById('p9').innerHTML=myobj.subcoad;                //obj                                        
+            document.getElementById('p10').innerHTML=myobj.uni;                   //obj                     
+            document.getElementById('p11').innerHTML=myobj.rec;                   //obj                       
+      
+        }
+  </script>
+</body>
+</html>
