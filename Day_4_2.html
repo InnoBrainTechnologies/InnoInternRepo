@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: darkseagreen;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><span style="color:gold;">bbit college for diploma student....</span></h1>
+    <p>inline element <span style="background-color: red; color: floralwhite;">this is internship</span> full stock devlopment</p>
+   
+   
+    <div class="name">
+        <h3>subjects web designing</h3>
+        <p>htnl ,css js language are using</p>
+    </div>
+   
+    <div class="name ">
+        <h3>java-script</h3>
+        <p>
+            this is web designingcoding laguage and oop language
+        </p>
+    </div>
+   
+    <div class="name">
+        <h3>python</h3>
+        <p>
+            this is web designingcoding laguage and oop language
+        </p>
+
+    </div>
+    <button onclick="myfun()">hide p tag information</button>
+    <script>
+        function myfun()
+        {
+            var a=document.getElementsByClassName("name");
+
+            for(var i=0;i<a.length;i++)
+            {
+                a[i].style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>
