@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+  <p id="a1"></p>
+  <p id="a2"></p>
+  <p id="a3"></p>
+  <p id="a4"></p>
+  <p id="a5"></p>
+  <p id="a6"></p>
+  <p id="a7"></p>
+  <p id="a8"></p>
+  <p id="a9"></p>
+  <p id="a10"></p>
+  <p id="a11"></p>
+  <p id="a12"></p>
+  <p id="a13"></p>
+  <p id="a14"></p>
+  <p id="a15"></p>
+  <p id="a16"></p>
+  <p id="a17"></p>
+  <p id="a18"></p>
+  
+
+    <script>
+         let mystr="innobrain technoloy";
+         let str1="NIRAJ";
+         let str2="hello!";
+         document.getElementById('a1').innerHTML=str1+str2;
+         document.getElementById('a2').innerHTML=str1.length;
+         document.getElementById('a3').innerHTML="hello"+"internship";
+        
+         //***************************************************//
+         
+         let my1="hello!";
+         let myobj=new String("hello!");
+         document.getElementById('a4').innerHTML=(my1==myobj);
+
+         //**************************************************//
+
+                //slice method//
+
+           let k1="python,c,java,c++,js,c#";
+           let k2=k1.slice(14,17);
+           document.getElementById('a5').innerHTML=k2;
+
+           //***********************************************//
+           
+                  //substring //
+
+              let r1="x1,y1,x2,y2";
+              let r2=r1.substring(3,9);
+              document.getElementById('a6').innerHTML=r2; 
+
+          //**********************************************//
+
+                //replece() //
+
+              let j1="python,java,c++";
+              let newj1=j1.replace("python","c");
+              document.getElementById('a7').innerHTML=newj1;
+
+           //********************************************//
+
+           let c1="python,java,c++";
+           let newc1=c1.toLocaleUpperCase("python","c");
+           document.getElementById('a8').innerHTML=newc1;
+
+            
+           let n1="summer phase-1";
+           let n2="internship";
+           let n3=n1.concat(" ",n2);
+           document.getElementById('a9').innerHTML=n3;
+
+
+           let b1="                 summer phase-1";
+           let b2=b1.trimEnd();
+           document.getElementById('a10').innerHTML=b2;
+
+           
+           let z1="computer";
+           let z2=z1.padStart(17,"$");
+           document.getElementById('a11').innerHTML=z2;
+
+           //*********************************************//
+
+           //charat()//
+
+           let v1="computer-engineering";
+           let v2=v1.charAt(11);
+           document.getElementById('a12').innerHTML=v2;
+
+           let l1="computer-engineering";
+           let char=l1[5];
+           document.getElementById('a13').innerHTML=char;
+
+
+           let o1="o1,o2,o3,o4,o5";
+           const myarr=o1.split(",")
+           document.getElementById('a14').innerHTML=myarr;
+
+
+           let str="hello,i an ronit devaliya";
+           let ind=str.indexOf("ronit");
+           document.getElementById('a15').innerHTML=ind;
+
+
+           let str5="hello,i an ronit devaliya from diploma student.....";
+           let jk=str5.search("from");
+           document.getElementById('a16').innerHTML=jk;
+
+           //**************************************************************//
+
+           //template litrelas//
+
+           let num=10;
+           let num2=25
+           let str9="heloo";
+           let str3="ronit";
+           let u1=`helloi am claver, 
+           and brave num=${num+num2},${str9},${str3} smart boy...`;
+          document.getElementById('a17').innerHTML=u1;
+
+
+          //*****************************************************************//
+
+          let hd="list of languages";
+          let lang=["java","c++","python"];
+          let ht=`<h2> ${hd}</h2><ul>`;
+            for(const i of lang)
+            {
+                ht+=`<li>${i}</li>`
+            }
+            ht+='</ul>';
+            document.getElementById('a18').innerHTML=ht; 
+    </script>
+</body>
+</html>
