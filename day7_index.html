@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>...</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-family: cursive;
+    }
+
+    button {
+      background-color: #35424a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #29373d;
+    }
+
+    .output-box {
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <p>Click the buttons below to see the results:</p>
+
+    <button id="executeButton">Execute Functions</button>
+    <br />
+    <br />
+    <div class="output-box">
+      <h2>Function 1: Hello World</h2>
+      <pre id="output1"></pre>
+    </div>
+
+    <div class="output-box">
+      <h2>Function 2: Adding two numbers</h2>
+      <pre id="output2"></pre>
+    </div>
+
+    <div class="output-box">
+      <h2>Function 3: String Concatenation</h2>
+      <pre id="output3"></pre>
+    </div>
+
+    <div class="output-box">
+      <h2>Function 4: Maximum of Three Numbers</h2>
+      <pre id="output4"></pre>
+    </div>
+
+    <div class="output-box">
+      <h2>Function 5: Manipulate an Array</h2>
+      <pre id="output5"></pre>
+    </div>
+
+    <div class="output-box">
+      <h2>Function 6: Even or Odd</h2>
+      <pre id="output6"></pre>
+    </div>
+
+    <div class="output-box">
+      <h2>Function 7: Factorial</h2>
+      <pre id="output7"></pre>
+    </div>
+
+    <div class="output-box">
+      <h2>Function 8: Reverse a String</h2>
+      <pre id="output8"></pre>
+    </div>
+
+    <div class="output-box">
+      <h2>Function 9: Random Number</h2>
+      <pre id="output9"></pre>
+    </div>
+
+    <div class="output-box">
+      <h2>Function 10: Check Palindrome</h2>
+      <pre id="output10"></pre>
+    </div>
+
+    <script>
+      document
+        .getElementById("executeButton")
+        .addEventListener("click", () => {
+          // Function 1: Hello World
+          function sayHello() {
+            document.getElementById("output1").textContent = "Hello, world!";
+          }
+          sayHello();
+
+          // Function 2: Adding two numbers
+          function addNumbers(a, b) {
+            return a + b;
+          }
+          document.getElementById("output2").textContent =
+            "Sum: " + addNumbers(5, 3);
+
+          // Function 3: String Concatenation
+          function concatenateStrings(str1, str2) {
+            return str1 + " " + str2;
+          }
+          document.getElementById("output3").textContent =
+            "Concatenation: " + concatenateStrings("Hello", "World");
+
+          // Function 4: Maximum of Three Numbers
+          function findMax(a, b, c) {
+            return Math.max(a, b, c);
+          }
+          document.getElementById("output4").textContent =
+            "Max: " + findMax(10, 4, 8);
+
+          // Function 5: Manipulate an Array
+          function manipulateArray(arr) {
+            arr.push(5);
+            arr.pop();
+            return arr;
+          }
+          const myArray = [1, 2, 3];
+          document.getElementById("output5").textContent =
+            "Manipulated Array: " + manipulateArray(myArray);
+
+          // Function 6: Even or Odd
+          function checkEvenOdd(num) {
+            return num % 2 === 0 ? "Even" : "Odd";
+          }
+          document.getElementById("output6").textContent =
+            "Even/Odd: " + checkEvenOdd(7);
+
+          // Function 7: Factorial
+          function factorial(n) {
+            if (n === 0 || n === 1) {
+              return 1;
+            }
+            return n * factorial(n - 1);
+          }
+          document.getElementById("output7").textContent =
+            "Factorial: " + factorial(5);
+
+          // Function 8: Reverse a String
+          function reverseString(str) {
+            return str.split("").reverse().join("");
+          }
+          document.getElementById("output8").textContent =
+            "Reversed String: " + reverseString("JavaScript");
+
+          // Function 9: Random Number
+          function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+          }
+          document.getElementById("output9").textContent =
+            "Random Number: " + getRandomNumber(1, 10);
+
+          // Function 10: Check Palindrome
+          function isPalindrome(str) {
+            const cleanedStr = str.toLowerCase().replace(/[^a-zA-Z0-9]/g, "");
+            const reversedStr = cleanedStr.split("").reverse().join("");
+            return cleanedStr === reversedStr;
+          }
+          document.getElementById("output10").textContent =
+            "Is Palindrome: " + isPalindrome("racecar");
+        });
+    </script>
+  </div>
+</body>
+
+</html>
