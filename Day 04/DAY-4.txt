@@ -1,0 +1,44 @@
+Day 4:
+
+
+Today Task:--
+1- Create one page and apply Inline css.
+2- Create one another page in which you have to apply Internal css.
+3- Create one another page in which you have to apply External css.
+4- Create bookmark with id and hyperlink.
+5- Create id for specific element and use it in css and javascript.
+6- Create class for specific elements and use it in css and javascript.
+
+
+Today's code: 
+1- First file:=
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        #me1{
+            background-color: aqua;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="me1">This is internal css</h1>
+    <p style="background-color: blue; color: pink; font-size: 50px;">This is Inline css</p>
+    <h2 class="me2">This is an External css in which we have to use link tag in which we have to provide the path of our external css</h2>
+</body>
+</html>
+
+2- Second file:=
+mystyle.css file
+
+.me2{
+    background-color: red;
+    color: whitesmoke;
+    padding: 20px;
+    font-size: 30px;
+}

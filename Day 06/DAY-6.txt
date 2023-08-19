@@ -1,0 +1,233 @@
+Day 6:
+
+
+Today Task:--
+1) Create one Login Page and one Signup Page for your website and use all tags which we have learned in today's Session.
+2) Make a page and upload your both HTML pages on github.
+
+
+--> All Form input tag
+Textbox => input type="text"
+Date => input type="date"
+Gender => input type="radio"
+Hobby => input type="checkbox"
+Select tag > option
+Number => input type="number"
+Button => input type="submit"
+Password => input type="password"
+Email => input type="email"
+
+-->Today's Code:
+1) Simple Form:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="second.html" method="post">
+        <label for="l1">User Name:</label>
+        <input type="text" name="uname">
+        <br>
+        <label for="l2">Enter BirthDate:</label>
+        <input type="date" name="mydate">
+        <br>
+        <label for="l3">Gender:</label>
+        Male<input type="radio" name="r1">
+        Female<input type="radio" name="r1">
+        <br>
+        <label for="hobby">Hobby:</label>
+        <input type="checkbox" name="ch1">Food
+        <input type="checkbox" name="ch2">Movies
+        <input type="checkbox" name="ch3">Traveling
+        <input type="checkbox" name="ch4"> Cricket
+        <br>
+        Enter Address:<textarea name="tadd">
+
+        </textarea>
+        <br>
+        Select Your Education Details
+        <select> 
+            <option>PH.D</option>
+            <option>Masters</option>
+            <option>Bachlors</option>
+            <option>Diploma</option>
+        </select><br>
+        Enter Your Contact No.:<input type="number" name="contactno">
+       <br><br> <input type="submit" name="s1" value="Save">
+    </form>
+</body>
+</html>
+
+
+2) Sign up From:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            margin:0;
+            padding:0;
+            background-color:bisque;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            background-image:url('images/img1.jpg');
+        }
+        .container{
+            background-color: blueviolet;
+            border-radius:10px;
+            box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+            max-width:400px;
+            padding:20px;
+            text-align: center;
+        }
+        .container h1{
+            margin-bottom: 20px;
+        }
+        .input-group{
+            margin-bottom:15px;
+        }
+        .input-group label{
+            display:block;
+            text-align:left;
+            margin-bottom:5px;
+        }
+        .input-group input{
+            width:80%;
+            padding:10px;
+            border:1px solid red;
+            border-radius:5px;
+
+        }
+        .btn{
+            background-color: black;
+            color:white;
+            padding: 10px 20px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:15px;
+        }
+        @media (max-width:600px){
+            .container{
+                max-width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <h1> Sign Up</h1>
+    <form>
+        <div class="input-group">
+            <label for="sigunupname">Username</label>
+            <input type="text" name="uname">
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="signuppsw">
+        </div>
+        <div class="input-group">
+            <label for="sigunupname">Contact No.</label>
+            <input type="number" name="uname">
+        </div>
+           <button type="submit" class="btn">Sign Up</button>
+        
+    </form>
+    <p>Already have an account? <a href="Login.html">Log In</a></p>
+</div>
+</body>
+</html>
+
+3) Login From:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            margin:0;
+            padding:0;
+            background-color:bisque;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            background-image:url('images/img1.jpg');
+        }
+        .container{
+            background-color: blueviolet;
+            border-radius:10px;
+            box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+            max-width:400px;
+            padding:20px;
+            text-align: center;
+        }
+        .container h1{
+            margin-bottom: 20px;
+        }
+        .input-group{
+            margin-bottom:15px;
+        }
+        .input-group label{
+            display:block;
+            text-align:left;
+            margin-bottom:5px;
+        }
+        .input-group input{
+            width:80%;
+            padding:10px;
+            border:1px solid red;
+            border-radius:5px;
+
+        }
+        .btn{
+            background-color: black;
+            color:white;
+            padding: 10px 20px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:15px;
+        }
+        @media (max-width:600px){
+            .container{
+                max-width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <h1> Login</h1>
+    <form>
+        <div class="input-group">
+            <label for="sigunupname">Email</label>
+            <input type="email" name="uname">
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="signuppsw">
+        </div>
+       
+           <button type="submit" class="btn">Sign Up</button>
+        
+    </form>
+    <p>Dont have an Account?> <a href="formWithDesign.html">Sign Up Now</a></p>
+</div>
+</body>
+</html>
+
+
+

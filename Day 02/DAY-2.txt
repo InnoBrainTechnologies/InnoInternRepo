@@ -1,0 +1,96 @@
+Day 2:
+
+
+Today Task:--
+1- To create your branch today on github and add your code on it, we have already shared a repository link in a whatsapp group. 
+2- Create one html file
+3- Practice Anchor tag a, Picture tag, and apply Internal stylesheet css <style> </style>
+
+
+--> Before commiting a branch you have to specify user name and user eamilid using below given commands.
+git config --global user.name "your name"
+to check your name
+git config --global user.name
+
+git config --global user.email "your name"
+to check your email
+git config --global user.email
+
+--> To merge your code from one branch to another new branch
+1) git merge {new branch}
+
+--> Cloning your work into repositories
+2) git remote add origin {clone repo URL Link} 
+3) git commit -m "{your message}"
+4) git push origin {your branch name}
+
+
+
+--> To upload your work on your github branch
+5) git push -u origin {your branch name}
+
+--> Now if want to go to your previous code
+6) git log
+7) git checkout {hash code}
+
+--> To clone some project work in our system
+8) git clone {link of other project repositories}
+
+--> To rename your branch
+9) git branch -m {old-name new-name}
+Ex:-- git branch -m pruthvi pruthvi1
+
+
+--> Link of download images and videos for your project.
+=> https://www.vecteezy.com/
+=> https://www.pexels.com/
+=> https://pixabay.com/
+
+Today Code:==
+First file code:==
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+a:link{
+    color:green;
+    background-color:yellow;
+    text-decoration:none;
+}
+
+a:hover{
+    color:red;
+    background-color:skyblue;
+    text-decoration:none;
+}
+a:active{
+    color:blueviolet;
+    background-color:aqua;
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+    <a href="second.html">Click Here</a>
+    <picture>
+        <source media="(min-width: 650px)" srcset="img1.jpg">
+        <source media="(min-width: 465px)" srcset="img4.jpg">
+        <img src="img5.jpg" style="width:auto;">
+      </picture>
+      
+</body>
+</html>
+
+Second file:==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> This is my Second Page</h1>
+</body>
+</html>

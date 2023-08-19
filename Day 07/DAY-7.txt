@@ -1,0 +1,117 @@
+Day 7:
+
+
+Today Task:--
+1) Create one html page and use Javascript init which we have learned in today's session.
+2) Create a simple calculator using operators and javascript and design it properly using html and css. (No deadline for today's submission, you may take two days for completing the task).
+
+-->Javascript:
+document.getElementById
+.innerHTML
+
+-->Event tag
+onclick
+
+-->Identifiers/Name
+
+Variable name
+function name
+object
+array
+Rule-->(A-z)
+&, _
+
+Not a keyword --> it is reserved word
+
+-->Comments
+// single comments
+/* Multiline Comments */
+
+Javascript is case sensitive
+ Ex := let name;
+       Name = "ABC"
+Not valid;
+
+-->Keyword to use define variable
+   let, const, var
+
+const x=100;
+x=500;
+You cannot reinitialize a constant value
+
+When to use Javascript const keyword?
+array
+object
+function
+regular Expr
+
+array->element value
+object-> properties
+
+-->To add value in array:
+   .push 
+
+
+-->Arithmetic op
+   +,-,/,*
+-->Assignment op
+=
++=,
+-=,
+*=
+%=
+-->Comparison op
+==
+===
+!=
+!==
+>
+<
+>=
+<=
+?
+
+
+Today's code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<button type="button" onclick="myfun()">Click here</button>
+<p id="p1"></p>
+<p id="p2"></p>
+<script>
+
+    const myobj={"subname":"Java","subcode":3350701,"uni":"gtu"}
+
+    myobj.subname="Python";
+    myobj.res="xyz";
+    document.getElementById('p1').innerHTML=myobj.res;
+
+    // const hobbies=["traveling","maxican","car"];
+
+    // hobbies[0]="Coding";
+    // hobbies.push("Reads Books");
+    // document.getElementById("p1").innerHTML=hobbies;
+    // const x=2.456;
+    // x=x+10;
+    // let person="Jonny",des="Manager",salary=40000;
+    // document.getElementById('p1').innerHTML=x;
+    // document.getElementById('p2').innerHTML=salary;
+    // function myfun()
+    // {
+    //     document.getElementById('p1').innerHTML="Hello InnoBrain";
+    //     document.getElementById('p2').innerHTML="This is a our Internship Program";
+    // }
+    // let x,y,z;
+    // x=100;y=200;z=x+y;
+    // document.getElementById("p1").innerHTML=z;
+</script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+Day 3:
+
+
+Today Task:--
+1- Create a page and apply image as a hyperlink.
+2- Create one table and apply css.
+3- Create menu using list and anchor tag and apply css.
+4- Set fevicon image on title bar.
+5- Upload your code on github.
+6- If you have not created your account on github with your branch then create it today and upload all the task what we have assigned to you.
+
+
+--> To create a class in css use this
+	class = .
+--> To create a id in css use this
+	id = #
+
+
+-->Link for Html Color code:
+	https://htmlcolorcodes.com/
+
+Today's code:
+Navbar or Menu code:=
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./images/img5.jpg">
+    <title>Cart</title>
+<style>
+    ul.menu{
+        list-style:none;
+        padding:0;
+    }
+    ul.menu li{
+        display:inline-block;
+        margin-right:10px;
+    }
+    ul.menu li a{
+        text-decoration:none;
+        color:white;
+        padding:5px 10px;
+        border:2px solid black;
+        border-radius:10px;
+        background-color:#9CC5B2;
+        transition:background-color 0.3s ease;
+    }
+    ul.menu li a:hover{
+        background-color: aqua;
+        color:black;
+    }
+
+</style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="second.html">Home</a></li>
+        <li><a href="first.html">About us</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Achivements</a></li>
+        <li><a href="">Portfolio</a></li>
+    </ul>
+</body>
+</html>
+
+Table designing code:=
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+table,th,td{
+    border-style:solid;
+    border-radius:10px;
+    border-color:blue;
+    padding-top:10px;
+    padding-bottom:20px;
+    padding-left:5px;
+    padding-right:14px;
+
+    border-spacing:10px;
+
+}
+tr:nth-child(even)
+{
+    background-color:blue;
+    color:white;
+}
+td:nth-child(even),th:nth-child(even)
+{
+    background-color: aquamarine;
+}
+tr:hover{
+    background-color: red;
+}
+</style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Monday</td>
+        <th>Tuesday</td>
+        <th>Wednesday</td>
+        <th>Thurday</td>
+
+    </tr>
+    <tr>
+        <td>Java</td>
+        <td>C++</td>
+        <td>COA</td>
+        <td>CN</td>
+    </tr>
+    <tr>
+        <td>Java</td>
+        <td>C++</td>
+        <td>COA</td>
+        <td>CN</td>
+    </tr>
+    <tr>
+        <td>Java</td>
+        <td>C++</td>
+        <td>COA</td>
+        <td>CN</td>
+    </tr>
+
+</table>
+    
+</body>
+</html>

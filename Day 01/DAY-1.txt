@@ -1,0 +1,57 @@
+Day 1:
+
+
+Today Task:--
+1- You have to download a git in your system.
+2- Now you have to create a account on github.
+3- Install Vscode or any IDE.
+4- Install HTML Snippets in Vscode.
+5- Practice all git commands what we have learned today.
+
+
+git
+https://git-scm.com/
+
+github
+https://github.com/
+
+vs code:
+https://code.visualstudio.com/
+
+subline:
+https://www.sublimetext.com/
+
+snippets
+--> HTML Snippets
+
+
+Git Commad--
+1) git config --global user.name "your name"
+2) git config --global user.email "your email"
+3) git init
+4) git status
+5) git add {your file name}
+6) git status	
+7) git commit -m "{your message}"
+8) git log
+--> Add or create new file
+9) git status
+10) git add {your new file name}
+11) git commit -m "{your message}"
+12) git log
+
+--> Add multiple file together on github
+13) git add .
+14) git status  
+15) git commit -m "{your message}"
+
+--> Create your branch
+16) git branch {your branch name}  //-//  git checkout -b {your branch name}
+17) git branch
+18) git checkout {your created branch name}
+
+19) git merge {new branch name for merging file}
+
+
+
+

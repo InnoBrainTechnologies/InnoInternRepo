@@ -1,0 +1,211 @@
+Day 5:
+
+
+Today Task:--
+1- Create HTML pages for all properties what you have learned today and upload it on your branch on github.
+
+
+--> Responsive design.
+
+--> Grid view = 12 columns for Webpage
+
+-->Position property
+=>static
+=>relative
+=>fixed
+=>absolute
+
+-->Overflow property
+=>visible
+=>hidden
+=>scroll 
+=>auto
+
+-->Float property
+=>left
+=>right
+=>none
+=>inherit
+
+
+-->Media Query use to make your website responsive
+syntax: @media screen and (max-width: 700px){
+}
+
+syntax: @media screen and (min-width: 400px){
+}
+
+
+-->Today's Code:
+
+1) BoxSizing:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    div.dv1{
+        width:500px;
+        margin:auto;
+        border:1px solid blue;
+    }
+    div.dv2{
+        max-width:500px;
+        margin:auto;
+        border:3px solid green;
+    }
+ 
+</style>
+</head>
+<body>
+<div class="dv1">This is a block having width property.asdfhasgdfkjhsdafkjhsdafkjsadkjfasdkjhfaskdjhfh</div>
+<div class="dv2">This is a block having max-width property</div>
+</body>
+</html>
+
+2) Position Property:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+div.absolute{
+    border:2px dotted brown;
+    position:absolute;
+}
+</style>
+<body>
+    <div class="absolute">
+        Independence Day is celebrated annually on 15 August as 
+        a public holiday in India commemorating the nation's 
+        independence from the United Kingdom on 15 August 1947, 
+        the day when the provisions of the Indian Independence Act,
+         which transferred legislative sovereignty to the 
+         Indian Constituent Assembly, came into effect. 
+         India retained King George VI as head of state until
+          its transition to a republic, when the Constitution 
+          of India came into effect on 26 January 1950
+           (celebrated as Indian Republic Day) and 
+           replaced the dominion prefix, Dominion of India, 
+           with the enactment of the sovereign law 
+           Constitution of India. India attained
+            independence following the independence 
+            movement noted for largely non-violent 
+            resistance and civil disobedience led by
+             Indian National Congress under the leadership 
+             of Mahatma Gandhi.
+    </div>
+</body>
+</html>
+
+3) Overflow Property:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        background-color: aquamarine;
+        width:250px;
+        height:50px;
+        border:1px solid;
+        overflow:auto;
+    }
+</style>
+<body>
+    <div>
+        Independence Day is celebrated annually on 15 August as a public holiday in India commemorating the nation's independence from the United Kingdom on 15 August 1947, the day when the provisions of the Indian Independence Act, which transferred legislative sovereignty to the Indian Constituent Assembly, came into effect. India retained King George VI as head of state until its transition to a republic, when the Constitution of India came into effect on 26 January 1950 (celebrated as Indian Republic Day) and replaced the dominion prefix, Dominion of India, with the enactment of the sovereign law Constitution of India. India attained independence following the independence movement noted for largely non-violent resistance and civil disobedience led by Indian National Congress under the leadership of Mahatma Gandhi.
+    </div>
+</body>
+</html>
+
+4) Float Property:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        float:inherit;
+    }
+</style>
+<body>
+    <p>
+        <img src="images/img1.jpg" style="width:250px;height:250px">
+        Independence Day is celebrated annually on 15 August as a public holiday in India commemorating the nation's independence from the United Kingdom on 15 August 1947, the day when the provisions of the Indian Independence Act, which transferred legislative sovereignty to the Indian Constituent Assembly, came into effect. India retained King George VI as head of state until its transition to a republic, when the Constitution of India came into effect on 26 January 1950 (celebrated as Indian Republic Day) and replaced the dominion prefix, Dominion of India, with the enactment of the sovereign law Constitution of India. India attained independence following the independence movement noted for largely non-violent resistance and civil disobedience led by Indian National Congress under the leadership of Mahatma Gandhi.
+    </p>
+</body>
+</html>
+
+5) Media Query1:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div.p1{
+        background-color: aquamarine;
+        padding:10px;
+    }
+    @media screen and (max-width:700px){
+        div.p1{
+            display: none;
+        }
+    }
+</style>
+<body>
+    <h1> Hello This is a message from InnoBrain Technologies..</h1>
+    <div class="p1"> This is @media rule..</div>
+    <p>
+        Independence Day is celebrated annually on 15 August as a public holiday in India commemorating the nation's independence from the United Kingdom on 15 August 1947, the day when the provisions of the Indian Independence Act, which transferred legislative sovereignty to the Indian Constituent Assembly, came into effect. India retained King George VI as head of state until its transition to a republic, when the Constitution of India came into effect on 26 January 1950 (celebrated as Indian Republic Day) and replaced the dominion prefix, Dominion of India, with the enactment of the sovereign law Constitution of India. India attained independence following the independence movement noted for largely non-violent resistance and civil disobedience led by Indian National Congress under the leadership of Mahatma Gandhi.
+    </p>
+</body>
+</html>
+
+6) Media Query2:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:aqua;
+    }
+    @media screen and (min-width:400px)
+    {
+        body{
+            background-color: blue;
+
+        }
+    }
+    @media screen and (min-width:700px)
+    {
+        body{
+            background-color: brown;
+        }
+    }
+</style>
+<body>
+    <h3>
+        Independence Day is celebrated annually on 15 August as a public holiday in India commemorating the nation's independence from the United Kingdom on 15 August 1947, the day when the provisions of the Indian Independence Act, which transferred legislative sovereignty to the Indian Constituent Assembly, came into effect. India retained King George VI as head of state until its transition to a republic, when the Constitution of India came into effect on 26 January 1950 (celebrated as Indian Republic Day) and replaced the dominion prefix, Dominion of India, with the enactment of the sovereign law Constitution of India. India attained independence following the independence movement noted for largely non-violent resistance and civil disobedience led by Indian National Congress under the leadership of Mahatma Gandhi.
+    </h3>
+    
+</body>
+</html>
