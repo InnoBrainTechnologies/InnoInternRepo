@@ -4,7 +4,7 @@
 Hey there, I'm Sujal Patel, and this repository is a window into my exciting journey as an intern at Innobrain Technologies. Here, you'll find a collection of daily entries where I share my experiences, challenges, and victories. I've also documented the projects I've been fortunate to work on, detailing the goals, technologies, and outcomes. You'll discover how I've tackled errors and enhancements, learning valuable lessons along the way. Quality takes precedence over quantity here, so expect clear and concise documentation, enhanced with visuals like screenshots and diagrams. Join me as I reflect on my growth, celebrate accomplishments, and outline my future plans. Your feedback and collaboration are more than welcome – let's make this journey unforgettable!
 
 ## 🚀 About Me
-I'm a versatile developer comfortable with languages like C, C++, Python, and a web enthusiast skilled in HTML, CSS, JavaScript, and Tailwind. Additionally, I have experience working with PHP to bring dynamic functionality to web projects.
+I'm a flexible programmer proficient in languages such as C, C++, and Python. Alongside this, I have a strong passion for web development, with expertise spanning HTML5, CSS3, and JavaScript. This comprehensive skill set allows me to navigate through various programming domains. Additionally, I bring my coding prowess to web projects, harnessing PHP to infuse dynamic functionality.
 
 
 ## 🔗 Links
