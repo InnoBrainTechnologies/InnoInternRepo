@@ -1,0 +1,15 @@
+What did I learn today....?
+
+Date :- 11th August 2023.
+Time :- 01:00 PM to 02:30 PM.
+
+01) I learned how To create your branch on GitHub
+02) I learned how to link your visual studio to GitHub.
+03) I learned how to link your visual studio to repository via git.
+04) I learned how to push your code in GitHub repository.
+05) I learned how to make good looking webpages.
+06) I learned how to add beautiful colors and pictures and fonts on your webpages.
+07) I learned how to get high quality pictures and videos for free from different websites.
+08) I learned how to apply Internal stylesheet css.
+09) I learned apply Internal css on <style> </style> tag.
+10) i learned and practice of basic tags in my webpages.

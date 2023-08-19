@@ -1,0 +1,41 @@
+What did I learn today....?
+
+Date :- 17th August 2023.
+Time :- 01:00 PM to 02:30 PM.
+
+01) I learned How to create a form with various input elements:
+
+   •- How to create a textbox using this tags.
+      <input type="text">.
+
+   •- How to create a date input using this tags.
+      <input type="date">.
+
+   •- How to create radio buttons for gender using this tags.
+      <input type="radio">.
+
+   •- How to create checkboxes for hobbies using this tags.
+      <input type="checkbox">.
+
+   •- How to create a dropdown list using this tags.
+      <select> and <option>
+
+   •- How to create a number input using this tags.
+      <input type="number">.
+
+   •- How to create a submit button using this tags.
+      <input type="submit">.
+
+   •- How to create a password input using this tags.
+      <input type="password">.
+
+   •- How to create an email input using this tags.
+      <input type="email">.
+
+02) I learned how to create login and signup page 
+
+   •- How to create a password input using this tags.
+      <input type="password">.
+
+   •- How to create an email input using this tags.
+      <input type="email">.

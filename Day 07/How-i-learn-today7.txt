@@ -1,0 +1,15 @@
+What did I learn today....?
+
+Date :- 18th August 2023.
+Time :- 01:00 PM to 02:30 PM.
+
+01) I learned how to print hello world in JavaScript.
+02) I learned how to add two numbers in JavaScript.
+03) I learned how to perform string concatenation in JavaScript.
+04) I learned How to find the maximum of three numbers in JavaScript.
+05) I learned How to manipulate arrays in JavaScript.
+06) I learned How to check if a number is even or odd in JavaScript.
+07) I learned How to calculate the factorial of a number in JavaScript.
+08) I learned How to reverse a string in JavaScript.
+09) I learned How to generate a random number in JavaScript.
+10) I learned How to check for palindromes in JavaScript.

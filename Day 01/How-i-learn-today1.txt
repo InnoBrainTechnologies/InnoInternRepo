@@ -1,0 +1,16 @@
+What did I learn today....?
+
+Date :- 10th August 2023.
+Time :- 01:00 PM to 02:30 PM.
+
+01) I learned How to download and setup Visual Studio and Git software.
+02) I learned how to use Visual Studio.
+03) I learned how to create a account on GitHub.
+04) I learned where and how to use Git software.
+05) I learned that Git is used to control these versions.
+06) I learned how to link Git to Visual studio.
+07) I learned and practice of git commands and its work.
+08) I learned how can i create my own branch and contribute to a project.
+09) i learned how to download extension from visual studio
+10) I learned How can i use HTML snippets to speed up my productivity.
+11) I learned that you can run Giet commands in Git bash terminal.

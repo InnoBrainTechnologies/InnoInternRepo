@@ -1,0 +1,11 @@
+What did I learn today....?
+
+Date :- 14th August 2023.
+Time :- 01:00 PM to 02:30 PM.
+
+01) I learned How to create one page and apply Inline CSS.
+02) I learned How to create one another page in which you have to apply Internal CSS.
+03) I learned How to create one another page in which you have to apply External CSS.
+04) I learned How to create a bookmark with an ID and hyperlink.
+05) I learned How to create an ID for a specific element and use it in CSS and JavaScript.
+06) I learned How to create a class for specific elements and use it in CSS and JavaScript.

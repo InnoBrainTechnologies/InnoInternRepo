@@ -1,0 +1,9 @@
+What did I learn today....?
+
+Date :- 12th August 2023.
+Time :- 03:30 PM to 05:00 PM.
+
+01) I learned How to create  page and apply image as a hyperlink.
+02) I learned how How to create one table and apply css.
+03) I learned How to create menu using list and anchor tag and apply css.
+04) I learned How to set favicon image on title bar.
