@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+    /* Add CSS for the output box */
+    .main-output-box {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 200px;
+        background-color: #35424a;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Add CSS for the output box */
+    .output-box {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+</style>
+<title>My List Page</title>
+</head>
+<body>
+    <div class="main-output-box">
+
+    <div class="output-box" align="center">
+        <h2>List of template literals </h2>
+    </div>
+
+    <div class="output-box">
+        <h2>Studying Subjects:</h2>
+    <ul id="subjects"></ul>
+    </div>
+
+    <div class="output-box">
+        <h2>My Hobbies:</h2>
+        <ul id="hobbies"></ul>  
+    </div>
+
+    <div class="output-box">
+        <h2>Grocery Items:</h2>
+        <ul id="groceryItems"></ul>
+    </div>
+</div>
+
+  <script>
+    const subjects = ['Scripting Language Python', 'Relational Database', 'Computer Science', 'Basics of OS', ' Data Structures and Algorithms'];
+    const hobbies = ['Listening songs', 'Playing indore games', 'Playing outdore games', 'Driving', 'Photography'];
+    const groceryItems = ['Apples', 'Bread', 'Milk', 'Ice', 'Pasta'];
+
+    function populateList(listId, items) {
+      const listElement = document.getElementById(listId);
+      listElement.innerHTML = items.map(item => `<li>${item}</li>`).join('');
+    }
+
+    window.onload = function() {
+      populateList('subjects', subjects);
+      populateList('hobbies', hobbies);
+      populateList('groceryItems', groceryItems);
+    };
+  </script>
+</body>
+</html>
