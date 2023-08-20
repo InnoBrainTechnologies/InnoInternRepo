@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Functions</title>
+</head>
+<body>
+  <h1>String Functions</h1>
+  <p id="originalText">   Hello, Interns!   </p>
+
+  <h2>.length</h2>
+  <p>Length of the string: <span id="lengthOutput"></span></p>
+
+  <h2>.slice</h2>
+  <p>Slice from index 2 to 7: <span id="sliceOutput"></span></p>
+
+  <h2>.replace</h2>
+  <p>Replace 'World' with 'Universe': <span id="replaceOutput"></span></p>
+
+  <h2>.replaceAll</h2>
+  <p>Replace all spaces with underscores: <span id="replaceAllOutput"></span></p>
+
+  <h2>.concat</h2>
+  <p>Concatenate ' Welcome' to the string: <span id="concatOutput"></span></p>
+
+  <h2>.trim</h2>
+  <p>Trim spaces from both ends: <span id="trimOutput"></span></p>
+
+  <h2>.trimStart</h2>
+  <p>Trim spaces from the beginning: <span id="trimStartOutput"></span></p>
+
+  <h2>.trimEnd</h2>
+  <p>Trim spaces from the end: <span id="trimEndOutput"></span></p>
+
+  <h2>.padStart</h2>
+  <p>Pad the string to length 20 with '-' at the beginning: <span id="padStartOutput"></span></p>
+
+  <h2>.padEnd</h2>
+  <p>Pad the string to length 20 with '-' at the end: <span id="padEndOutput"></span></p>
+
+  <h2>.charAt</h2>
+  <p>Character at index 7: <span id="charAtOutput"></span></p>
+
+  <h2>.split</h2>
+  <p>Split the string by ',': <span id="splitOutput"></span></p>
+
+  <h2>.indexOf</h2>
+  <p>Index of 'World': <span id="indexOfOutput"></span></p>
+
+  <h2>.lastIndexOf</h2>
+  <p>Last index of 'l': <span id="lastIndexOfOutput"></span></p>
+
+  <script>
+    const originalText = document.getElementById('originalText').textContent;
+
+    // .length
+    document.getElementById('lengthOutput').textContent = originalText.length;
+
+    // .slice
+    document.getElementById('sliceOutput').textContent = originalText.slice(2, 7);
+
+    // .replace
+    document.getElementById('replaceOutput').textContent = originalText.replace('World', 'Universe');
+
+    // .replaceAll
+    document.getElementById('replaceAllOutput').textContent = originalText.replaceAll(' ', '_');
+
+    // .concat
+    document.getElementById('concatOutput').textContent = originalText.concat(' Welcome');
+
+    // .trim
+    document.getElementById('trimOutput').textContent = originalText.trim();
+
+    // .trimStart
+    document.getElementById('trimStartOutput').textContent = originalText.trimStart();
+
+    // .trimEnd
+    document.getElementById('trimEndOutput').textContent = originalText.trimEnd();
+
+    // .padStart
+    document.getElementById('padStartOutput').textContent = originalText.padStart(20, '-');
+
+    // .padEnd
+    document.getElementById('padEndOutput').textContent = originalText.padEnd(20, '-');
+
+    // .charAt
+    document.getElementById('charAtOutput').textContent = originalText.charAt(7);
+
+    // .split
+    document.getElementById('splitOutput').textContent = originalText.split(',');
+
+    // .indexOf
+    document.getElementById('indexOfOutput').textContent = originalText.indexOf('World');
+
+    // .lastIndexOf
+    document.getElementById('lastIndexOfOutput').textContent = originalText.lastIndexOf('l');
+  </script>
+</body>
+</html>
