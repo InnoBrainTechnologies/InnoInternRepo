@@ -4,127 +4,87 @@
 <head>
   <title>Dhruv 226040307062</title>
   <style>
-    body {
-      font-family: Verdana;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+
+    /* Add CSS for the output box */
+    .main-output-box {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 200px;
+        background-color: #35424a;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     }
 
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 70px;
-      background-color: rgb(134, 134, 134);
-      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
-    }
-
-    h2 {
-      margin-top: 0;
-    }
-
-    p {
-      margin-bottom: 20px;
-      font-size: 24px;
-      font-family: Verdana;
-    }
-
-    button {
-      background-color: #35424a;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-
-    button:hover {
-      background-color: #1a2022;
-    }
-
+    /* Add CSS for the output box */
     .output-box {
-      background-color: #f0f0f0;
-      padding: 30px;
-      margin-bottom: 10px;
-      border-radius: 10px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     }
     
-  </style>
+</style>
 </head>
 
-<body align="center">
-  <div class="container">
-    <B><p>Click the buttons below to see the results :</p>
+<body>
+  <div class="main-output-box">
 
-    <button id="executeButton">Execute Functions</button></B>
-    <br />
-    <br />
+    <div class="output-box" align="center">
+      <h2>All program's of JavaScript</h2>
+    </div>
+
     <div class="output-box">
-      <h3>Function 1:</h3>
-      <h5>Print Hello World on output screen</h5>
+      <h3>program 1:</h3>
       <pre id="output1"></pre>
     </div>
 
     <div class="output-box" >
-      <h3>Function 2:</h3>
-      <h5>Adding two numbers on output screen</h5>
+      <h3>program 2:</h3>
       <pre id="output2"></pre>
     </div>
 
     <div class="output-box">
-      <h3>Function 3:</h3>
-      <h5>Print String Concatenatio on output screen</h5>
+      <h3>program 3:</h3>
       <pre id="output3"></pre>
     </div>
 
     <div class="output-box">
-      <h3>Function 4:</h3>
-      <h5>Print Maximum of Three Numbers in output screen</h5>
+      <h3>program 4:</h3>
       <pre id="output4"></pre>
     </div>
 
     <div class="output-box">
-      <h3>Function 5:</h3>
-      <h5>Print Manipulate an Array on output screen</h5>
+      <h3>program 5:</h3>
       <pre id="output5"></pre>
     </div>
 
     <div class="output-box">
-      <h3>Function 6:</h3>
-      <h5>Print Even or Odd on output screen</h5>
+      <h3>program 6:</h3>
       <pre id="output6"></pre>
     </div>
 
     <div class="output-box">
-      <h3>Function 7:</h3>
-      <h5>Print Factorial on output screen</h5>
+      <h3>program 7:</h3>
       <pre id="output7"></pre>
     </div>
 
     <div class="output-box">
-      <h3>Function 8:</h3>
-      <h5>Print Reverse a String on output screen</h5>
+      <h3>program 8:</h3>
       <pre id="output8"></pre>
     </div>
 
     <div class="output-box">
-      <h3>Function 9:</h3>
-      <h5>Print Random Number on output screen</h5>
+      <h3>program 9:</h3>
       <pre id="output9"></pre>
     </div>
 
     <div class="output-box">
-      <h3>Function 10:</h3>
-      <h5>Print Check Palindrome on output screen</h5>
-      <pre id="output10"></pre>
+      <h3>program 10:</h3><pre id="output10"></pre>
     </div>
 
     <script>
-      document
-        .getElementById("executeButton")
-        .addEventListener("click", () => {
           // Function 1: Hello World
           function sayHello() {
             document.getElementById("output1").textContent = "Hello, world!";
@@ -201,7 +161,6 @@
           }
           document.getElementById("output10").textContent =
             "Is Palindrome : " + isPalindrome("racecar");
-        });
     </script>
   </div>
 </body>
