@@ -1,0 +1,27 @@
+What did I learn today....?
+
+Date :- 19th August 2023.
+Time :- 12:30 PM to 02:00 PM.
+
+01) I learned How to use String Length.
+02) I learned How to use Slice.
+03) I learned How to use Substring.
+04) I learned How to use Replace.
+05) I learned How to use Replace All.
+06) I learned How to Perform Case Insensitive Search.
+07) I learned How to Perform Global Match Search.
+08) I learned How to Convert to Uppercase
+09) I learned How to Convert to Lowercase
+10) I learned How to Concatenate Strings
+11) I learned How to Trim Whitespace
+12) I learned How to Trim Start
+13) I learned How to Trim End
+14) I learned How to Pad Start
+15) I learned How to Pad End
+16) I learned How to Get Character at Index
+17) I learned How to Split a String
+18) I learned How to Use Index Of
+19) I learned How to Use Last Index Of
+20) I learned How to Use Search
+21) I learned How to Use Starts With
+22) I learned How to Use Ends With
