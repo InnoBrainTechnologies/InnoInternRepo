@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <br>
+    <script>
+        let mystr="Hello My Name is Kushagra Dave";
+        let s1 = "Hello ";
+        let s2 = "Everyone";
+        let a = "Java,JavaScript,Python,C++,C#";
+        let b = a.slice(-10,-5);
+        let t1="x1,y1,x2,y2"
+        let t2 = t1.substr(3,6); 
+        let a1 = "Java, python ,C#, Java";
+        let newt1 = a1.replaceAll("/java/ig","JavaScript");
+        let x= "Good";
+        let y = "evening";
+        let z=x.concat(" ", y);
+        let str1 = "IB";
+        let str2 = str1.padEnd(10,"#");
+        let str3 = "Java,C#,C++,SQL,Phython";
+        let str4 = str3.charAt(7);
+        const myArr = str3.split(",");
+        let char = str3[1];
+        let str = "Hello my name is Kushagra Dave";
+        let strr = str.search("name");
+        let num1=10;
+        let num2=20;
+        let strr1="Hello";
+        let strr2="InnoBrain"
+        let strr3=`${str1},${str2},${num1+num2}`;
+        let hd="List of Lanugages";
+        let lang=["Java","C++","Python"];
+        let ht=`<h2> ${hd}</h2><ul>`;
+        for(const i of lang)
+        {
+            ht+=`<li>${i}</li>`;
+        }
+        ht+='</ul>';
+
+
+        document.getElementById('p1').innerHTML=mystr;
+        document.getElementById('p1').innerHTML=s1+s2;
+        document.getElementById('p1').innerHTML=s1.length;
+        document.getElementById('p1').innerHTML=(s1==s2);
+        document.getElementById('p1').innerHTML=t2;
+        document.getElementById('p1').innerHTML=t2;
+        document.getElementById('p1').innerHTML=newt1;
+        document.getElementById('p1').innerHTML=z;
+        document.getElementById('p1').innerHTML=str2;
+        document.getElementById('p1').innerHTML=myArr[0];
+        document.getElementById('p1').innerHTML=strr;
+        document.getElementById('p1').innerHTML=strr3;
+        document.getElementById("p1").innerHTML=ht;
+
+
+    </script>
+</body>
+</html>
