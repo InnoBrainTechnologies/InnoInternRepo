@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript</title>
+</head>
+<body>
+
+<!--Always specify the type attribute for the <button> element. Different browsers may use different default types for the <button> element
+<button type="button" onclick="Myinfo()">My Introduction</button> -->
+
+<p id="MyName"></p>
+<p id="ER-no"></p>
+<p id="Address"></p>
+<p id="E-mail"></p>
+
+<button type="button" onclick="Myinfo()">My Introduction</button>
+<script>
+function Myinfo()
+     {
+        document.getElementById('MyName').innerHTML="Kirtan Parmar";
+        document.getElementById('ER-no').innerHTML="226040307103";
+        document.getElementById('Address').innerHTML="Samarkha";
+        document.getElementById('E-mail').innerHTML="kirtan6681@gmail.com";
+     }
+</script>
+
+
+</body>
+</html>

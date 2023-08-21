@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+<style>
+table,td{
+border-style:inset;
+border-radius:10px;
+border-color:black;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:10px;
+padding-right:10px;
+
+}
+
+th:hover{
+background-color: yellow;
+}
+td:hover{
+background-color: aqua;
+}
+h1:hover{
+color:Blue;
+background-color:black;
+}
+
+input{
+border-style: solid;
+border-radius:5px;
+border-color:black;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:30px;
+padding-right:30px;
+
+}
+
+</style>
+
+</head>
+
+<body align="center" bgcolor="skyblue">
+
+    <h1 align=>Calculator</h1>
+
+<table align="center" bgcolor="gray">
+ <div class="calculator">
+
+        <input type="text"id="display"readonly>
+        <div class="buttons">
+
+<tr align="center">
+    <td><button class="number" onclick="appendToDisplay('7')">7</button></td>
+    <td><button class="number" onclick="appendToDisplay('8')">8</button></td>
+    <td><button class="number" onclick="appendToDisplay('9')">9</button></td>
+    <td bgcolor="red"><button class="clear" onclick="clearDisplay('C')">C</button></td>
+</tr>
+<tr align="center">
+    <td><button class="number" onclick="appendToDisplay('4')">4</button></td>
+    <td><button class="number" onclick="appendToDisplay('5')">5</button></td>
+    <td><button class="number" onclick="appendToDisplay('6')">6</button></td>
+    <td bgcolor="yellow"><button class="number" onclick="appendToDisplay('*')">*</button></td>
+
+</tr>
+<tr align="center">
+    <td><button class="number" onclick="appendToDisplay('1')">1</button></td>
+    <td><button class="number" onclick="appendToDisplay('2')">2</button></td>
+    <td><button class="number" onclick="appendToDisplay('3')">3</button></td>
+    <td bgcolor="yellow"><button class="number" onclick="appendToDisplay('-')">-</button></td>
+</tr>
+<tr align="center">
+    <td><button class="number" onclick="appendToDisplay('0')">0</button></td>
+    <td bgcolor="yellow"><button class="number" onclick="appendToDisplay('/')">/</button></td>
+    <td bgcolor="yellow"><button class="number" onclick="appendToDisplay('+')">+</button></td>
+    <td bgcolor="red"><button class="equals" onclick="calculate('=')">=</button></td>
+</tr>
+</div>
+</div>
+
+<script>
+function appendToDisplay(value) {
+    document.getElementById("display").value += value;
+}
+
+function clearDisplay() {
+    document.getElementById("display").value = "";
+}
+
+function calculate() {
+    const expression = document.getElementById("display").value;
+    const result = eval(expression);
+    document.getElementById("display").value = result;
+}
+
+</script>
+
+</table>
+</body>
+</html>
