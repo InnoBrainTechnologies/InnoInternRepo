@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Sorting</title>
+</head>
+<body>
+    <button id="alphabeticalButton">Alphabetical Order</button>
+    <button id="numericButton">Numeric Order</button>
+    <div id="output"></div>
+
+    <script>
+        const alphabeticalButton = document.getElementById("alphabeticalButton");
+        const numericButton = document.getElementById("numericButton");
+        const outputDiv = document.getElementById("output");
+
+        const data = [1,5, 2, 11,22,10, 17, 3,42,21,111]; // Your array data here
+
+        alphabeticalButton.addEventListener("click", function() {
+            const sortedAlphabetically = data.slice().sort((a, b) => {
+                return a.toString().localeCompare(b.toString());
+            });
+            displayArray(sortedAlphabetically);
+        });
+
+        numericButton.addEventListener("click", function() {
+            const sortedNumerically = data.slice().sort((a, b) => a - b);
+            displayArray(sortedNumerically);
+        });
+
+        function displayArray(arr) {
+            outputDiv.innerHTML = arr.join(", ");
+        }
+    </script>
+</body>
+</html>
