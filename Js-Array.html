@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+        <script>
+             const subjects=["Maths","Science","English"];
+            // document.getElementById('p1').innerHTML=subjects;
+
+            // const menu=new Array("Pizza","Sandwich","Spring Roll");
+            // document.getElementById('p1').innerHTML=menu.[menu.length];            
+            
+            // let len=menu.length;
+
+            // let a1="";
+            // for(let i=0;i<len;i++)
+            // {
+            //     a1=menu[i];
+            // }
+            // // document.getElementById('p1').innerHTML=t1;
+            // let text="<ul>";
+            // subjects.push("Hindi","Gujarati");
+            // subjects.forEach(myfun);
+            // text+="</ul>";
+            
+            // function myfun(value)
+            // {
+            //     text+="<li>"+value+"</li>";
+            // }
+            // document.getElementById('p1').innerHTML=text;
+
+
+            // const person=[];
+            // person["fname"]="Manav";
+            // person["lname"]="Shah";
+            // document.getElementById('p1').innerHTML=person;
+            const numbers=new Array("10","20","30","40","50");
+
+            
+            const fruits=new Array("Mango","apple");
+            
+            document.getElementById('p1').innerHTML=fruits;
+            document.getElementById('p2').innerHTML=numbers;
+            document.getElementById('p3').innerHTML=Array.isArray(numbers);
+                
+            numbers.pop();
+            numbers.push(60);
+            document.getElementById('p2').innerHTML=numbers; 
+            
+            numbers.shift();
+            document.getElementById('p2').innerHTML=numbers;
+
+            // delete numbers[0];
+            // document.getElementById('p2').innerHTML=numbers;
+            
+            const numbers1=numbers.concat(fruits);
+            document.getElementById('p4').innerHTML=numbers1;
+
+            const num1=[10,20,30,40,50];
+            num1.splice(2,0);
+            document.getElementById('p4').innerHTML=num1;
+
+            const num2=[100,200,300];
+            num2.slice(2);
+            document.getElementById('p4').innerHTML=num2;
+            
+            const num3=[100,200,190,300];
+            num3.sort(function(a,b){return a-b});
+            document.getElementById('p4').innerHTML=num3;
+            
+    </script>
+</body>
+</html>
