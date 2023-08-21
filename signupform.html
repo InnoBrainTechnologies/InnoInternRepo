@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin:0;
+            padding:0;
+            background-color: thistle;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+        }
+        .container
+        {
+            background-color: blueviolet;
+            border-radius:20px;
+            box-shadow:10px 10px 10px black;
+            max-width:500px;
+            padding:30px;
+            text-align: center;
+        }
+        .container h1
+        {
+            margin-bottom: 50px;
+        }
+        .input-group
+        {
+            margin-bottom:50px;
+        }
+        .input-group label
+        {
+            display:block;
+            text-align:left;
+            margin-bottom:5px;
+        }
+        .input-group input
+        {
+            width:80%;
+            padding:10px;
+            border:1px solid red;
+            border-radius:5px;
+
+        }
+        .btn
+        {
+            background-color:yellowgreen;
+            color:blue;
+            padding: 20px 30px;
+            border:none;
+            border-radius:50px;
+            cursor:grabbing;
+            font-size:20px;
+        }
+        @media (max-width:600px)
+        {
+            .container
+            {
+                max-width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <h1> Sign Up</h1>
+    <form>
+        <div class="input-group">
+            <label for="sigunupname">Username</label>
+            <input type="text" name="uname">
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="signuppsw">
+        </div>
+        <div class="input-group">
+            <label for="sigunupname">Contact No.</label>
+            <input type="number" name="uname">
+        </div>
+           <button type="submit" class="btn">Sign Up</button>
+        
+    </form>
+    <p>Already have an account? <a href="loginpage.html"">Log In</a></p>
+</div>
+</body>
+</html>

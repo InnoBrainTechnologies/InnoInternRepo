@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            font-family:Arial, Helvetica, sans-serif;
+            margin:0px;
+            padding:0px;
+            background-color: turquoise;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            height:100vh;  
+        }
+        .container
+        {
+            background-color: blueviolet;
+            border-radius:20px;
+            box-shadow:10px 10px 10px black;
+            max-width:500px;
+            padding:30px;
+            text-align: center;
+        }
+        .container h1
+        {
+            margin-bottom: 30px;
+        }
+        .input-group
+        {
+            margin-bottom:20px;
+        }
+        .input-group label
+        {
+            display:flex;
+            text-align:center;
+            margin-bottom:5px;
+        }
+        .input-group input
+        {
+            width:80%;
+            padding:10px;
+            border:1px solid red;
+            border-radius:5px;
+
+        }
+        .btn
+        {
+            background-color: black;
+            color:white;
+            padding: 10px 20px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:15px;
+        }
+        @media (max-width:600px)
+        {
+            .container{
+                max-width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <h1> Login</h1>
+    <form>
+        <div class="input-group">
+            <label for="sigunupname">Email</label>
+            <input type="email" name="uname">
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="signuppsw">
+        </div>
+       
+           <button type="submit" class="btn">Sign Up</button>
+        
+    </form>
+    <p>Dont have an Account?> <a href="signupform.html">Sign Up Now</a></p>
+</div>
+</body>
+</html>
