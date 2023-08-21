@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Lists</title>
+</head>
+<body>
+  <h1>My Lists</h1>
+
+  <h2>Subjects:</h2>
+  <ul id="subjectsList"></ul>
+
+  <h2>Hobbies:</h2>
+  <ul id="hobbiesList"></ul>
+
+  <h2>Grocery Items:</h2>
+  <ul id="groceryList"></ul>
+
+  <script>
+    const subjects = ['Math', 'Science', 'History', 'English'];
+    const hobbies = ['Reading', 'Painting', 'Cooking', 'Gaming'];
+    const groceryItems = ['Apples', 'Milk', 'Bread', 'Eggs'];
+
+    function displayList(list, targetId) {
+      const listContainer = document.getElementById(targetId);
+      listContainer.innerHTML = list.map(item => `<li>${item}</li>`).join('');
+    }
+
+    displayList(subjects, 'subjectsList');
+    displayList(hobbies, 'hobbiesList');
+    displayList(groceryItems, 'groceryList');
+  </script>
+</body>
+</html>
