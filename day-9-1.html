@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="o1"></p>
+    <p id="o2"></p>
+    <p id="o3"></p>
+    <p id="o4"></p>
+    <p id="o5"></p>
+    <p id="o6"></p>
+    <p id="o7"></p>
+    <p id="o8"></p>
+    <p id="o9"></p>
+<script>
+    const subjects=["Java","C++","Python"];
+    document.getElementById('o1').innerHTML=subjects;
+
+    const sub=[];
+    sub[0]="Chemistry";
+    sub[1]="Biology";
+    sub[2]="Maths";
+    document.getElementById('o2').innerHTML=sub[0];
+
+    const sub1=["Java-script","C",250];
+    let len=sub1.length;
+    let t1="<ul>";
+    for(let i=0;i<len;i++)
+    {
+        t1+="<li>"+sub1[i]+"<li>";
+    }
+    t1+="</ul>";
+    document.getElementById('o3').innerHTML=t1;
+   
+    const sub2=["html","python",310];
+    let text="<ul>"; 
+    sub2.push("rubby");
+    sub2[6]=".Net";
+
+    sub2.forEach(myfun);
+    text+="</ul>";
+    
+    function myfun(value)
+    {
+        text+="<li>"+value+"</li>";
+    }
+    
+    subjects[subjects.length];
+    document.getElementById('o4').innerHTML=text;
+
+
+
+    // const person=new Array(40);
+    const person2=[50,70,60];
+    const person3=[130,280,150];
+    const person4=[5000,2500,3090];
+    document.getElementById('o5').innerHTML=person2+person3+person4;
+    let type=typeof person2;
+    person2.pop();
+    person2.push(88);
+    person2.shift();
+    const p=person2.unshift("150");
+    delete person2[0];
+    const person5=person2.concat("computer");
+    document.getElementById('o6').innerHTML=person5;
+
+    const person6=[[12,28],[51,40],[78,61]];
+    const person7=person6.flat();
+    document.getElementById('o7').innerHTML=person6[2];
+  
+    const vals=[90,20,68,10,120,8];
+    vals.splice(2,1,1000);
+   
+    const vals2=vals.slice(1,3);
+    vals.sort(function(a,b){return a-b});
+     vals.reverse();
+    document.getElementById('o8').innerHTML=vals
+    document.getElementById('o9').innerHTML=vals2
+
+
+</script>
+</body>
+</html>
