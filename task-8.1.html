@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="A"></p>
+    <p id="B"></p>
+
+    <script>
+     //let str1="             Manav             Shah ";
+     //let str2 = str1.trimStart();
+     //document.getElementById("A").innerHTML=str2.trimStart();
+
+     let str1="Manav                Shah  ";
+     let str2 = str1.trimEnd();
+     let str3 = str1.padStart(20,":)");
+     let str4 = str1.split(',');
+     document.getElementById("A").innerHTML=str2.trimEnd();
+     document.getElementById("A").innerHTML=str3;
+     document.getElementById("B").innerHTML=str4;
+
+    </script>
+
+</body>     
+</html>
