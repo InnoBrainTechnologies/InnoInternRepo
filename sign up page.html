@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+       
+        h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #27ae60	;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .login-link a {
+            color: #3498db;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required />
+
+            <fieldset>
+                <legend>Gender:</legend>
+
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male"  required />
+
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female"checked  required />
+            </fieldset>
+
+            <fieldset>
+                <legend>Hobbies:</legend>
+
+                <label for="Dancing">Dancing</label>
+                <input type="checkbox" id="Dancing" name="hobbies[]" value="Dancing" />
+
+                <label for="traveling">Traveling</label>
+                <input type="checkbox" id="traveling" name="hobbies[]" value="traveling" />
+
+                <label for="Reading">Reading</label>
+                <input type="checkbox" id="Reading" name="hobbies[]" value="Reading" />
+
+
+                <label for="listening music">listening music</label>
+                <input type="checkbox" id="listening music" name="hobbies[]" value="listening music" />
+
+            </fieldset>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Age" required />
+
+            <input type="submit" value="Sign Up" />
+        </form>
+
+        <div class="login-link">
+            Already signed up? <a href="login page.html">Login here</a>
+        </div>
+    </div>
+</body>
+
+</html>
