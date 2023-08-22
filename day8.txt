@@ -1,0 +1,24 @@
+Today i have learned 
+
+1) How to use String Length
+2) How to use Slice
+3) How to use Substring
+4) How to use Replace
+5) How to use Replace All
+6) How to Perform Case Insensitive Search
+7) How to Perform Global Match Search
+8) How to Convert to Uppercase
+9) How to Convert to Lowercase
+10) How to Concatenate Strings
+11) How to Trim Whitespace
+12) How to Trim Start
+13) How to Trim End
+14) How to Pad Start
+15) How to Pad End
+16) How to Get Character at Index
+17) How to Split a String
+18) How to Use Index Of
+19) How to Use Last Index Of
+20) How to Use Search
+21) How to Use Starts With
+22) How to Use Ends With
