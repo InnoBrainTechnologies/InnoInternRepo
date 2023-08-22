@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>list</title>
+</head>
+<body>
+  <h2>subjects</h2>
+  <ul id="subjectsList"></ul>
+  <h2>hobbies</h2>
+  <ul id="hobbiesList"></ul>
+  <h2>Grocery</h2>
+  <ul id="groceryList"></ul>
+  <script>
+    const subjects = ["Mathematics", "Physics", "Biology"];
+    const hobbies = ["Reading", "Playing Guitar", "Cooking"];
+    const groceryItems = ["Apples", "Milk", "Cereal"];
+    function createList(containerId, items) 
+    {
+      const container = document.getElementById(containerId);
+      container.innerHTML = items.map(item => `<li>${item}</li>`).join('');
+    } 
+    createList("subjectsList", subjects);
+    createList("hobbiesList", hobbies);
+    createList("groceryList", groceryItems);
+  </script>
+</body>
+</html>
