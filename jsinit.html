@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="myfun()">Click here</button>
+    <p id = "p1"></p>
+    <p id = "p2"></p>
+
+    <script>
+        const myobj = {"subname": "Java" , "Subcode": 3350701 , "unit" : "gtu"}
+
+        myobj.subname = "Python";
+        myobj.res = "xyz";
+        document.getElementById('p1').innerHTML = myobj.res;
+
+        const hobbies = ["travelling" , "dancing" , "drawing"];
+        hobbies[1] = "coding";
+        hobbies.push("reading books");
+        document.getElementById("p2").innerHTML=hobbies.join(", ");
+
+        const x =2.456;
+        x = x + 10;
+        
+        let person= "Jhon" , des= "Manager" , salary=40000;
+        document.getElementById('p1').innerHTML=x;
+        document.getElementById('02').innerHTML=salary;
+
+        function myfun()
+        {
+            document.getElementById('p1').innerHTML="Hello World!!";
+            document.getElementById('p2').innerHTML="This is first javascript program";
+        }
+        let y,z;
+        x=100;
+        y=200;
+        z=x+y;
+        document.getElementById("p1"),innerHTML=z;
+    </script>
+
+</body>
+</html>
