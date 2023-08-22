@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+
+    <script type="module">
+        import{username,password} from "./task-10.2.js";
+
+        let idp="Username:"+username+"Password:"+password;
+        document.getElementById('p1').innerHTML=idp;
+    </script>
+</body>
+</html>
