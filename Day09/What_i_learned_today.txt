@@ -1,0 +1,42 @@
+Today I have learned
+
+1) About arrays and new keywords:
+   - .toString()
+   - .length
+   - .sort()
+   - Accessing the last element using [subjects.length-1]
+   - The += shorthand operator
+
+2) Loops and array handling:
+   - Using for loops
+   - Using forEach loops
+
+3) Array Types:
+   - Numeric Arrays: Indexed by numbers
+   - Associative Arrays: Not supported in JavaScript, indexed by strings
+
+4) JavaScript utilities:
+   - typeof
+   - Array.isArray() - returns true or false
+
+5) Array Manipulation Methods:
+   - .pop() - removes the last element
+   - .push() - adds elements to the end
+   - .shift() - removes the first element
+   - .unshift() - adds elements to the beginning
+   - delete - removes elements (leaving undefined)
+   
+6) Merging Arrays:
+   - .concat() - merges two or more arrays
+   - .flat() - flattens nested arrays
+
+7) Splicing and Slicing:
+   - .splice() - adds or removes elements in an array
+   - .slice() - extracts a portion of an array
+   
+8) Sorting and Reversing:
+   - .sort()
+   - .reverse()
+   - Sorting numerically: vals.sort(function(a, b) { return a - b; })
+
+These are the concepts and techniques I've learned today.
