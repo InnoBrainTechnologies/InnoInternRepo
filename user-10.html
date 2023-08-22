@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="s1"></p>
+    <p id="s2"></p>
+    
+
+
+    <script type="module">
+   import {username,psw} from "./user.js";
+
+    let t1 ="username:"+username+ "   "+"password:"+psw;
+    document.getElementById('s1').innerHTML=t1;
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p id="p1"></p>
+     <p id="p2"></p>
+     <p id="p3"></p>
+     <p id="p4"></p>
+     <p id="p5"></p>
+     <p id="p6"></p>
+     <p id="p7"></p>
+     <p id="p8"></p>
+     <p id="p9"></p>
+     <p id="p10"></p>
+    
+
+     <button onclick="this.style.display='none'">cleck here</button>
+
+    <script> 
+        const mydate=new Date("2006-10-23");
+        document.getElementById('p1').innerHTML=mydate;
+        document.getElementById('p2').innerHTML=mydate.getMonth();
+
+       
+        const user={
+            "name":"ronit",
+            "surname":"devaliya",
+            "fullname":function(){return this.name+" "+this.surname}
+            
+        };
+        let a=this
+        function myfun()
+        {
+            return this;
+        }
+        document.getElementById('p3').innerHTML=user.fullname();
+        document.getElementById('p4').innerHTML=myfun();
+
+
+
+            // **********  arrow function  *********** //
+
+
+          const myfun1 =(a,b)=>a*b;
+          document.getElementById('p5').innerHTML=myfun1(15,3);
+
+          const myfun2 =(a,b)=>
+          {
+             return "hello innobrain technology....";
+          }
+          document.getElementById('p6').innerHTML=myfun2();
+
+
+          const myfun3 =val1=>"hello"+val1;
+          document.getElementById('p7').innerHTML=myfun3("ronit");
+
+
+
+
+
+
+          // ********************** class ************************* //
+
+
+
+          class subjects
+          {
+            constructor(subname,sem)
+            {
+                this.subname=subname;
+                this.sem=sem;
+            }
+          }
+
+          const sub1=new subjects("c++",2);
+          const sub2=new subjects("java",4);
+          const sub3=new subjects("python",3);
+
+          document.getElementById('p8').innerHTML=sub1.subname+" "+sub1.sem;
+          document.getElementById('p9').innerHTML=sub2.subname+" "+sub2.sem;
+          document.getElementById('p10').innerHTML=sub3.subname+" "+sub3.sem;
+
+
+
+    </script>
+</body>
+</html>

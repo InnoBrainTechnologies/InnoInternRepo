@@ -15,6 +15,12 @@
     <p id="o7"></p>
     <p id="o8"></p>
     <p id="o9"></p>
+    <p id="o10"></p>
+    <p id="o11"></p>
+    <p id="o12"></p>
+    <p id="o13"></p>
+
+
 <script>
     const subjects=["Java","C++","Python"];
     document.getElementById('o1').innerHTML=subjects;
@@ -80,6 +86,19 @@
     document.getElementById('o8').innerHTML=vals
     document.getElementById('o9').innerHTML=vals2
 
+     const yals=[30,50,41,78,150,60];
+     const yals1=yals.map(fun);
+
+     function fun(yals,ind,array)
+     {
+        return yals+2;
+     }
+
+     document.getElementById('o10').innerHTML=yals1;
+
+     const yals2=[30,50,41,78,150,60];
+     
+     function fun1(yals,ind,array);
 
 </script>
 </body>
