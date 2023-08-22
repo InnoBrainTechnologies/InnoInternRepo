@@ -1,0 +1,52 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+
+      <style>
+       button:hover{
+       color: aliceblue;
+       background-color: blue;
+       }
+      </style>
+
+   </head>
+   <body bgcolor="sky blue" style="text-align: center;">
+
+       <button type="button" onclick="order()">Alphabetical order </button>
+       <p id="p1"></p>
+
+    <script>
+        const Alpha=["Z","Y","X","W","V","U","T","S","R","P","O","N","M","L","K","J","I","H","G","F","E","D","C","B","A"];
+        document.getElementById('p1').innerHTML=Alpha;
+
+        Alpha.sort();
+         function order(){
+          
+            document.getElementById('p1').innerHTML=Alpha;
+          
+       }
+    </script> 
+
+
+   <button type="button" onclick="Number()">Numerical order</button>
+   <p id="p2"></p>
+
+    <script>
+        const Num=["9","8","7","6","5","4","3","2","1"];
+
+        document.getElementById('p2').innerHTML=Num;
+
+        Num.sort(function(a, b){return a-b});
+
+         function Number(){
+          
+            document.getElementById('p2').innerHTML=Num;
+       }
+    </script>
+   </body>
+   </html>
+
+
