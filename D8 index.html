@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Created by Helly</title>
+    <style>
+
+      /* Add CSS for the output box */
+      .main-output-box {
+          border: 1px solid #ccc;
+          padding: 10px;
+          margin: 200px;
+          background-color: #35424a;
+          border-radius: 20px;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+      }
+      /* Add CSS for the output box */
+      .output-box {
+          border: 1px solid #ccc;
+          padding: 20px;
+          margin: 20px;
+          background-color: #f9f9f9;
+          border-radius: 10px;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+      }
+      
+  </style>
+</head>
+<body><b>
+  <!-- Add an output box container -->
+<div class="main-output-box">
+  <div class="output-box" align="center">
+    <h2>All program's of JavaScript</h2>
+  </div>
+  <div class="output-box">
+    <h3>program 1:</h3>
+      <p id="p1-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 2:</h3>
+      <p id="p2-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 3:</h3>
+    <p id="p3-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 4:</h3>
+    <p id="p4-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 5:</h3>
+    <p id="p5-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 6:</h3>
+    <p id="p6-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 7:</h3>
+    <p id="p7-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 8:</h3>
+    <p id="p8-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 9:</h3>
+    <p id="p9-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 10:</h3>
+    <p id="p10-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 11:</h3>
+    <p id="p11-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 12:</h3>
+    <p id="p12-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 13:</h3>
+    <p id="p13-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 14:</h3>
+    <p id="p14-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 15:</h3>
+    <p id="p15-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 16:</h3>
+    <p id="p16-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 17:</h3>
+    <p id="p17-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 18:</h3>
+    <p id="p18-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 19:</h3>
+    <p id="p19-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 20:</h3>
+    <p id="p20-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 21:</h3>
+    <p id="p21-output"></p>
+  </div>
+  <div class="output-box">
+    <h3>program 22:</h3>
+    <p id="p22-output"></p>
+  </div>
+</div>
+    <script>
+        // Concatenate two strings and display the result
+        let str1 = "Hello this is Dungrani";
+        let str2 = " Helly";
+        document.getElementById('p1-output').innerHTML = str1 + str2;
+        // Display the length of the first string
+        document.getElementById('p2-output').innerHTML += "<br>" + str1.length;
+        // Use a different paragraph for the following examples
+        // Check if a string and a String object are equal
+        let str3 = "Hello";
+        let strobj = new String("Hello");
+        document.getElementById('p3-output').innerHTML = (str3 === strobj) + "<br>";
+        // Slice method
+        let t1 = "HTML,CSS,JS,Boostrap,PHP,SQL,MySQL";
+        let t2 = t1.slice(5, 8);
+        document.getElementById('p4-output').innerHTML += t2 + "<br>";
+        // Substring method
+        t2 = t1.substr(3, 6);
+        document.getElementById('p5-output').innerHTML += t2 + "<br>";
+        // Replace method
+        let newt2 = t1.replace("CSS", "PHP");
+        document.getElementById('p6-output').innerHTML += newt2 + "<br>";
+        // Replace All method
+        newt2 = t1.replaceAll("HTML", "HTML-5");
+        document.getElementById('p7-output').innerHTML += newt2 + "<br>";
+        // ToUpperCase method
+        let newt1 = t1.toUpperCase();
+        document.getElementById('p8-output').innerHTML += newt1 + "<br>";
+        // ToLowerCase method
+        newt1 = t1.toLowerCase();
+        document.getElementById('p9-output').innerHTML += newt1 + "<br>";
+        // Concatenate two strings using concat method
+        let t3 = t1.concat(" ", t2);
+        document.getElementById('p10-output').innerHTML += t3 + "<br>";
+        // Trim and Pad methods
+        let t4 = "  Hello   ";
+        let t5 = t4.trimEnd();
+        document.getElementById('p11-output').innerHTML += t5 + "<br>";
+        // PadStart methods
+        let t6 = "Hello";
+        let t7 = t6.padStart(10, "$");
+        document.getElementById('p12-output').innerHTML += t7 + "<br>";
+        // PadEnd methods
+        let t8 = "Hello";
+        let t9 = t8.padEnd(10, "$");
+        document.getElementById('p13-output').innerHTML += t9 + "<br>";
+        // CharAt method
+        let t10 = "Hello Helly";
+        let t11 = t10.charAt(3);
+        document.getElementById('p14-output').innerHTML += t11 + "<br>";
+        // Split method
+        let t12 = "t1,t2,t3,t4";
+        const myArr = t12.split(",");
+        document.getElementById('p15-output').innerHTML += myArr[0] + "<br>";
+        // IndexOf methods
+        let str = "Hello my name is Helly";
+        const ind = str.indexOf("Helly");
+        document.getElementById('p16-output').innerHTML += ind + "<br>";
+        // LastIndexOf methods
+        const lastIndex = str.lastIndexOf("Helly");
+        document.getElementById('p17-output').innerHTML += lastIndex + "<br>";
+        // Search method
+        const searchIndex = str.search("Helly");
+        document.getElementById('p18-output').innerHTML += searchIndex + "<br>";
+        // StartsWith methods
+        const startsWithHello = str.startsWith("Hello");
+        document.getElementById('p19-output').innerHTML += startsWithHello + "<br>";
+        // EndsWith methods
+        const endsWithDhruv = str.endsWith("Helly");
+        document.getElementById('p20-output').innerHTML += endsWithDhruv + "<br>";
+        // Back-tick method
+        let num1 = 10;
+        let num2 = 20;
+        str1 = "Hello";
+        str2 = "Helly";
+        let t13 = `${str1}, ${str2}, ${num1}, ${num2}`;
+        document.getElementById('p21-output').innerHTML += t13 + "<br>";
+        // Using template literals to generate a list
+        let hd = "List of Languages";
+        let lang = ["Java", "C++", "Python"];
+        let ht = `<h2>${hd}</h2><ul>`;
+        for (const i of lang) {
+            ht += `<li>${i}</li>`;
+        }
+        ht += '</ul>';
+        document.getElementById("p22-output").innerHTML += ht;
+    </script>
+</b></body>
+</html>
