@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>inner html</title>
+</head>
+<body>
+<h1 id="myHeading">Hello My Name is</h1>
+  <button id="changeButton">CLICK ME!</button>
+
+  <script>
+    function changeHeading() {
+      var newHeading = "Hello  My Name is Rutva Patel";
+      document.getElementById("myHeading").innerHTML = newHeading;
+    }
+
+    // Add a click event listener to the button
+    var changeButton = document.getElementById("changeButton");
+    changeButton.addEventListener("click", changeHeading);
+  </script>
+</body>
+</html>
