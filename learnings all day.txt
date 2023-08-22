@@ -1,0 +1,141 @@
+EVERYDAY TASK:
+
+DAY 1
+
+1)Introduction about current running web languages.
+2)How to download vscode.
+3)How to download git and github.
+4)Introduction about git.
+5)About how to use github.
+6)About snippets in vscode.
+7)About various github commands.
+
+DAY 2
+
+1)How to create our branch on github.
+2)How to push our file on github.
+3)created an html file and practiced diffrent tags such as anchor tag,picture tag etc...
+4)How to get high quality pictures from free websites.
+5)Started learning CSS language.
+6)Studied about application of internal stylesheet CSS <style></style>.
+
+DAY 3
+
+1)How to create a page and apply image as a hyperlink.
+2)How create a table and applied css.
+3) How to create menu using list and anchor tag and apply css.
+4) How to set favicon image on title bar.
+
+DAY 4
+
+1)How to create a page and apply inline CSS.
+2)How to create a page and about external CSS.
+3)Bookmark with id and hyperlink.
+4)class and id in CSS.
+5)started javascript.
+6)how to create id and class for specific elements and use it in css and JS.
+
+DAY 5
+
+1) How to create HTML pages for all the properties you have learned today and upload them to your branch on GitHub.
+
+2) How to implement responsive design principles to ensure your webpage works well across various devices and screen sizes.
+
+3) How to create a 12-column grid view layout for your webpage.
+
+4) How to use different position property values to control the positioning of elements:
+   - How to use the position: static property.
+   - How to use the position: relative property.
+   - How to use the position: fixed property.
+   - How to use the position: absolute property.
+
+5) How to control content overflow within elements using the overflow property:
+   - How to use overflow: visible.
+   - How to use overflow: hidden.
+   - How to use overflow: scroll.
+   - How to use overflow: auto.
+
+6) How to control element alignment within containers using the float property:
+   - How to use float: left.
+   - How to use float: right.
+   - How to use float: none.
+   - How to use float: inherit.
+
+7) How to make your website responsive using media queries:
+   - How to use media queries with @media screen and (max-width: 700px) to adapt your webpage's layout for smaller screens.
+   - How to use media queries with @media screen and (min-width: 400px) to enhance your webpage's layout for larger screens.
+
+DAY 6
+
+1) How to create a form with various input elements:
+   - How to create a textbox using <input type="text">.
+   - How to create a date input using <input type="date">.
+   - How to create radio buttons for gender using <input type="radio">.
+   - How to create checkboxes for hobbies using <input type="checkbox">.
+   - How to create a dropdown list using <select> and <option> tags.
+   - How to create a number input using <input type="number">.
+   - How to create a submit button using <input type="submit">.
+   - How to create a password input using <input type="password">.
+   - How to create an email input using <input type="email">.
+
+DAY 7
+
+1) How to print hello world in JavaScript
+2) How to add two numbers in JavaScript
+3) How to perform string concatenation in JavaScript
+4) How to find the maximum of three numbers in JavaScript
+5) How to manipulate arrays in JavaScript
+6) How to check if a number is even or odd in JavaScript
+7) How to calculate the factorial of a number in JavaScript
+8) How to reverse a string in JavaScript
+9) How to generate a random number in JavaScript
+10) How to check for palindromes in JavaScript
+
+DAY 8
+
+1)Information about array and some new keywords such as
+   - .toString()
+   - .length
+   - .sort()
+   - The += shorthand operator
+   - Accessing the last element using [subjects.length-1]
+
+2) Learnt loops and array handling:
+   - Using for loops
+   - Using for Each loops
+
+3) Learnt types of arrays:
+   - Numeric Arrays: Indexed by numbers
+   - Associative Arrays: Not supported in JavaScript, indexed by strings
+
+4) Learnt JavaScript utilities:
+   - typeof
+   - Array.isArray() - returns true or false
+
+5) Learnt Array Manipulation Methods:
+   - .pop() - removes the last element
+   - .push() - adds elements to the end
+   - .shift() - removes the first element
+   - .unshift() - adds elements to the beginning
+   - delete - removes elements (leaving undefined)
+   
+6) Learnt Merging Arrays:
+   - .concat() - merges two or more arrays
+   - .flat() - flattens nested arrays
+
+7) Leant Splicing and Slicing:
+   - .splice() - adds or removes elements in an array
+   - .slice() - extracts a portion of an array
+   
+8) Leant Sorting and Reversing:
+   - .sort()
+   - .reverse()
+   - Sorting numerically: vals.sort(function(a, b) { return a - b; })
+
+DAY 9
+
+1)
+
+
+
+

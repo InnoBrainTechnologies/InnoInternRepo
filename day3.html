@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yashvi day 3</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body align="center">
+
+    <style>
+        .task-box {
+                border: 2px solid black;
+                background-color: lightblue;
+                border-radius: 70px;
+                padding: 20px;
+                margin: 20px;
+            }
+    
+        ul.menu{
+            list-style:none;
+            padding:0;
+        }
+        ul.menu li{
+            display:inline-block;
+            margin-right:10px;
+        }
+        ul.menu li a{
+            text-decoration:none;
+            font-size: 30px;
+            color:aliceblue;
+            padding:5px 10px;
+            border:2px solid black;
+            border-radius:5px;
+            background-color:black;
+            color: white;
+            transition:background-color 0.3s ease;
+        }
+        ul.menu li a:hover{
+            background-color: aqua;
+            color:black;
+        }
+    
+        table,th,td{
+        border-style:solid 100px;
+        border-radius:5px;
+        border-color:black;
+        padding-top:10px;
+        padding-bottom:20px;
+        padding-left:5px;
+        padding-right:14px;
+        border-spacing:10px;
+        }
+    
+            tr:nth-child(odd),tr:nth-child(even){
+            background-color:rgb(184, 205, 50);
+        }
+            td:nth-child(even),th:nth-child(even){
+            background-color:rgb(245, 245, 245);
+        }
+    
+        tr:hover{
+            background-color: ##444241;
+            color: whitesmoke;
+        }
+        h1{
+            color: black
+        }
+        
+    </style>
+    <div class="task-box">
+
+        <h1 style="color: ;">1st task :- Image as a hyperlink</h1>
+
+        <a href="https://github.com/InnoBrainTechnologies/InnoInternRepo" target="_blank">
+        <img src="https://image3.mouthshut.com/images/ImagesR/imageuser_m/2017/11/925747536-4559193-1.png?rnd=38062">
+        </a>
+
+    </div>
+
+    
+    <div class="task-box">
+
+        <h1 align="center" >2nd task :- Table designing</h1>
+        <table border="1" cellspacing="0" cellpadding="5" align="center">
+            <tr>
+                <th>Types of Languages</th>
+                <th>Example Language</th>
+                <th>Description</th>
+                <th>Example Instructions</th>
+            </tr>
+            <tr>
+                <td>High-level Language</td>
+                <td>Python,Visual Basic,Java,C++</td>
+                <td>Independent of hardware (portable).<br>Translated using either a compile or interpreter.
+                    <br>One statement translate into many machine code instruction.</td>
+                <td>PayRate = 7.38 <br> Hours =37.5<br>Salary= PayRate*Hours</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Low-level Language</td>
+                <td>Assembly Language</td>
+                <td>Translated Using an assembler.<br>
+                one statement translated into one <br> 
+            mahine code instruction</td>
+                <td>LDA181
+                <br>ADD93
+                <br>ST0185</td>
+
+            </tr>    
+
+            <tr>
+                <td>Machine Code</td>
+                <td>Executable binary code produced either by a <br>compliler,interpreter or assembler.</td>
+                <td>101010101010100101101</td>
+                
+            </tr>
+
+            
+
+        </table>
+    </div>
+
+    <div class="task-box">
+
+        <h1>3rs task :- Navigation bar</h1>
+
+        <ul class="menu">
+            <li><a href="Home">Home</a></li>
+            <li><a href="About us">About us</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Achivements">Achivements</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+        </ul>
+
+    </div>
+
+    <div class="task-box">
+
+        <h1>4th task :- fevicon title bar</h1>
+        <h3 style="color:darkcyan;">Set fevicon image on title bar</h3>
+    </div>
+
+
+
+</body>
+</html>
