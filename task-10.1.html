@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        class marks{
+            constructor(subname,marks){
+                this.subname=subname;
+                this.marks=marks;
+
+            }
+        }
+        const sub1=new marks("Maths",20);
+        const sub2=new marks("Science",18);
+        document.getElementById('p1').innerHTML=sub1.subname+sub1.marks;
+        document.getElementById('p2').innerHTML=sub2.subname+sub2.marks;
+    </script>
+</body>
+</html>
