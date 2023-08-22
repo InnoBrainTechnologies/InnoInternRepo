@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Manipulation</title>
+    <style>
+
+        /* Add CSS for the output box */
+        .main-output-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 200px;
+            background-color: #35424a;
+            border-radius: 20px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+  
+        /* Add CSS for the output box */
+        .output-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+    </style>
+</head>
+<body>
+<div class="main-output-box">
+    
+    <div class="output-box" align="center"><h2>All program's of JavaScript</h2></div>
+
+    <div class="output-box"><h3>program 1:</h3><p id="p1"></p></div>
+
+    <div class="output-box"><h3>program 2:</h3><p id="p2"></p></div>
+
+    <div class="output-box"><h3>program 3:</h3><p id="p3"></p></div>
+
+    <div class="output-box"><h3>program 4:</h3><p id="p4"></p></div>
+
+    <div class="output-box"><h3>program 5:</h3><p id="p5"></p></div>
+
+    <div class="output-box"><h3>program 6:</h3><p id="p6"></p></div>
+
+    <div class="output-box"><h3>program 7:</h3><p id="p7"></p></div>
+
+    <div class="output-box"><h3>program 8:</h3><p id="p8"></p></div>
+
+    <div class="output-box"><h3>program 9:</h3><p id="p9"></p></div>
+
+    <div class="output-box"><h3>program 10:</h3><p id="p10"></p></div>
+
+    <div class="output-box"><h3>program 11:</h3><p id="p11"></p></div>
+
+    <div class="output-box"><h3>program 12:</h3><p id="p12"></p></div>
+
+    <div class="output-box"><h3>program 13:</h3><p id="p13"></p></div>
+
+    <div class="output-box"><h3>program 14:</h3><p id="p14"></p></div>
+
+    <div class="output-box"><h3>program 15:</h3><p id="p15"></p></div>
+
+    <div class="output-box"><h3>program 16:</h3><p id="p16"></p></div>
+
+    <div class="output-box"><h3>program 17:</h3><p id="p17"></p></div>
+
+    <div class="output-box"><h3>program 18:</h3><p id="p18"></p></div>
+
+    <div class="output-box"><h3>program 19:</h3><p id="p19"></p></div>
+
+    <div class="output-box"><h3>program 20:</h3><p id="p20"></p></div>
+
+    <div class="output-box"><h3>program 21:</h3><p id="p21"></p></div>
+
+    <div class="output-box"><h3>program 22:</h3><p id="p22"></p></div>
+
+    <div class="output-box"><h3>program 23:</h3><p id="p23"></p></div>
+
+    <div class="output-box"><h3>program 24:</h3><p id="p26"></p></div>
+
+    <div class="output-box"><h3>program 25:</h3><p id="p27"></p></div>
+
+</div>
+
+<script>
+
+    // Program 1 array
+
+    const subjects1 = ["Java", "C++", "Python"];
+    document.getElementById('p1').innerHTML = subjects1.join(', ');
+
+    // Program 2 array
+    
+   const subjects2 = [];
+    subjects2[0] = "Chem";
+    subjects2[1] = "Bio";
+    subjects2[2] = "Maths";
+    document.getElementById('p2').innerHTML = subjects2.join(', ');
+    
+    // Program 3 toString method
+    
+    const subjects3 = new Array("Java", "C++", 100);
+    subjects3[1] = "C#";
+    document.getElementById('p3').innerHTML = subjects3.toString();
+    
+    // Program 4 length method
+    
+    const subjects4 = new Array("Java", "C++", 100, "JS");
+    subjects4[1] = "C#";
+    document.getElementById('p4').innerHTML = subjects4.length;
+    
+    // Program 5 sort method
+    
+    const subjects5 = new Array("Java", "C++", 100, "C");
+    subjects5[1] = "C#";
+    document.getElementById('p5').innerHTML = subjects5.sort().join(', ');
+    
+    // Program 6 first or last element
+
+    const subjects6 = ["Java", "C++", 100, "C"];
+    subjects6[1] = "C#";
+    document.getElementById('p6').innerHTML = subjects6[subjects6.length - 1];
+    
+    // Program 7 simple looping
+
+    const subjects7 = ["Java", "C++", 100, "C"];
+    let len7 = subjects7.length;
+    let t7 = "<ul>";
+    for (let i = 0; i < len7; i++) {
+        t7 += "<li>" + subjects7[i] + "</li>"; // Fixed closing </li> tag
+    }
+    t7 += "</ul>";
+    document.getElementById('p7').innerHTML = t7;
+    
+    // Program 8 for each looping
+
+    const subjects8 = ["Java", "C++", 100];
+    let text8 = "<ul>";
+    subjects8.forEach(myfun8);
+    text8 += "</ul>";
+    
+    function myfun8(value) {
+        text8 += "<li>" + value + "</li>";
+    }
+    document.getElementById('p8').innerHTML = text8;
+    
+    // Program 9 push method in array looping
+
+    const subjects9 = ["Java", "C++", 100];
+    subjects9.push("New Added")
+    let text9 = "<ul>";
+    subjects9.forEach(myfun9);
+    text9 += "</ul>";
+    
+    function myfun9(value) {
+        text9 += "<li>" + value + "</li>";
+    }
+    document.getElementById('p9').innerHTML = text9;
+    
+    // Program 10 object instead of associative array
+
+    const person = {
+        fname: "Dhruv",
+        lname: "Kevadiya"
+    };
+    document.getElementById('p10').innerHTML = "First Name: " + person.fname + "<br>Last Name: " + person.lname;
+
+    // Program 11 Object array
+
+    const personArray = [10, 20, 30, 40];
+    const person2 = [50, 60, 70, 80];
+    document.getElementById('p11').innerHTML = personArray;
+    document.getElementById('p12').innerHTML = person2;
+
+    // Program 12 Type of array
+    let type = Array.isArray(person2) ? "Array" : "Not an Array";
+    document.getElementById('p13').innerHTML = type;
+
+    // Program 13 isArray method
+    document.getElementById('p14').innerHTML = Array.isArray(person2);
+
+    // Program 14 popping() and pushing() method
+    person2.pop();
+    person2.push(78);
+    document.getElementById('p15').innerHTML = person2;
+
+    // Program 15 shift() and unshift() method
+    person2.shift();
+    document.getElementById('p16').innerHTML = person2;
+
+    person2.unshift("10");
+    document.getElementById('p17').innerHTML = person2;
+
+    // Program 16 Delete method
+    delete person2[0];
+    person2[0] = ""; // Replace the deleted value with an empty string
+    document.getElementById('p18').innerHTML = person2;
+
+    // Program 17 Merge method
+
+    const person3=[200,300,400];
+    const person4=person2.concat(person3);
+    document.getElementById('p19').innerHTML=person4;
+
+    // Program 18 Array to sub Array
+
+    const person5=[[10,20],[30,40],[50,60]];
+    document.getElementById('p20').innerHTML=person5[0];
+
+    // Program 19 flat method
+
+    const person6=[[10,20],[30,40],[50,60]];
+    const person7=person6.flat();
+    document.getElementById('p21').innerHTML=person7[0];
+
+    // Program 20 splice method
+
+    const vals=[10, 20, 30, 40, 50];
+    vals.splice(2, 1); // Adjusted the second argument
+    document.getElementById('p22').innerHTML=vals;
+
+    // Program 21 slice method
+    const vals2=[10, 20, 30, 40, 50];
+    const vals3=vals2.slice(1, 4); // Adjusted the range
+    document.getElementById('p23').innerHTML=vals3;
+
+    // Program 22 Reverse method
+    const vals4=[50, 100, 40, 10, 70];
+    vals4.reverse();
+    document.getElementById('p26').innerHTML=vals4;
+
+    // Program 23 Numeric sorting
+    const vals5=[50, 100, 40, 10, 70];
+    vals5.sort(function(a,b){return a-b});
+    document.getElementById('p27').innerHTML=vals5;
+
+</script>
+</body>
+</html>

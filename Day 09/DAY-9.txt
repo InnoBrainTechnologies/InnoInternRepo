@@ -1,0 +1,125 @@
+Day 9:
+
+
+Today Task:--
+1) Create two button and create an array in javascript when i click on one button it will shows number in alphabetical order when i click on second button it will show in numberic order.
+
+
+-->Array
+new keywords
+
+.toString()
+.length
+.sort()
+[subjects.length-1]
+
++= shorthand operator
+
+for loop
+forEach loop
+
+
+Numeric Array-->index-->numeric
+Associative Array --> Not suppoerted by javascript-->index-->String
+
+typeof
+Array.isArray(); // true or false
+
+.pop();
+.push();
+
+.shift()
+.unshift()
+
+delete
+
+--> Now we have to merge two or more array?
+.concat()
+.flat()
+
+
+-->splicing and slicing
+splice--> to add new items in array
+slice --> 
+
+.sort
+.reverse
+vals.sort(function(a,b){ return a-b });
+
+Today's Code:=
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+<script>
+    // const subjects=["Java","C++","Python"];
+    // const subjects=[];
+    // subjects[0]="Chem";
+    // subjects[1]="Bio";
+    // subjects[2]="Maths";
+
+    // const subjects=["Java","C++",100];
+    
+    // let len=subjects.length;
+
+    // let t1="<ul>";
+    // for(let i=0;i<len;i++)
+    // {
+    //     t1+="<li>"+subjects[i]+"<li>";
+    // }
+    // t1+="</ul>";
+    // let text="<ul>";
+    // subjects.push("Pascal");
+    // subjects[6]=".Net";
+    // subjects.forEach(myfun);
+    // text+="</ul>";
+    
+    // function myfun(value)
+    // {
+    //     text+="<li>"+value+"</li>";
+    // }
+    // document.getElementById('p1').innerHTML=text;
+    //subjects[subjects.length];
+
+    // const person=[];
+    // person["fname"]="Anil";
+    // person["lname"]="Patel";
+    // document.getElementById('p1').innerHTML=person; /// warning
+
+    // const person=new Array(40);
+    // const person2=[20,30,40];
+    // const person3=[100,200,300];
+    // const person4=[1000,2000,3000];
+    // document.getElementById('p1').innerHTML=person;
+    //let type=typeof person2;
+    // person2.pop();
+    // person2.push(78);
+    // person2.shift();
+    // const p=person2.unshift("100");
+    // delete person2[0];
+    // const person5=person2.concat("Anil");
+    // const person5=[[10,20],[30,40],[50,60]];
+    //  const person6=person5.flat();
+
+    const vals=[50,20,70,10,100,78];
+    // const vals=["Pruthvi","Anil"];
+    // vals.splice(2,1,1000);
+
+    // const vals2=vals.slice(1);
+    vals.sort(function(a,b){return a-b});
+    // vals.reverse();
+    document.getElementById('p2').innerHTML=vals
+
+
+</script>
+</body>
+</html>
+

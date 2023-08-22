@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sorting Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    #container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #007BFF;
+      color: white;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 70%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #output {
+      margin-top: 20px;
+    }
+
+    .output-box {
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Sorting Example</h1>
+    <div>
+      <input type="text" id="inputBox" placeholder="Enter a value">
+      <button id="addButton">Add</button>
+    </div>
+    <br>
+    <div>
+      <button id="alphaButton">Sort Alphabetically</button>
+      <button id="numButton">Sort Numerically</button>
+    </div>
+    <div id="output"></div>
+  </div>
+
+  <script>
+    const alphabeticallyButton = document.getElementById("alphaButton");
+    const numericallyButton = document.getElementById("numButton");
+    const inputBox = document.getElementById("inputBox");
+    const addButton = document.getElementById("addButton");
+    const outputDiv = document.getElementById("output");
+
+    let valuesArray = [];
+
+    addButton.addEventListener("click", () => {
+      const inputValue = inputBox.value;
+      if (inputValue !== "") {
+        valuesArray.push(inputValue);
+        inputBox.value = "";
+        updateOutput();
+      }
+    });
+
+    alphabeticallyButton.addEventListener("click", () => {
+      valuesArray.sort();
+      updateOutput();
+    });
+
+    numericallyButton.addEventListener("click", () => {
+      valuesArray.sort((a, b) => parseFloat(a) - parseFloat(b)); // Parse as floats for numerical sorting
+      updateOutput();
+    });
+
+    function updateOutput() {
+      outputDiv.innerHTML = "";
+      valuesArray.forEach(value => {
+        const box = document.createElement("div");
+        box.classList.add("output-box");
+        box.textContent = value;
+        outputDiv.appendChild(box);
+      });
+    }
+  </script>
+</body>
+</html>
