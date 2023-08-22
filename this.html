@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script>
+        const user={
+            "name":"Niraj",
+            "surname":"Kateshiya",
+            "fullname":function(){return this.name+" "+this.surname}
+    };
+    let a=this;
+    function myfun()
+    {
+        return this;
+    }
+    document.getElementById('p1').innerHTML=user.fullname();  
+    document.getElementById('p2').innerHTML=myfun();
+    </script>
+</body>
+</html>

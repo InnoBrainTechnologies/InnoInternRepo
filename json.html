@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p> 
+
+    <script>
+        let t1='{"student":['+
+        '{"name":"Niraj","surname":"kateshiya"},'+
+        '{"name":"ronit","surname":"devaliya"}]}';
+        const obj=JSON.parse(t1);
+        document.getElementById('p1').innerHTML=obj.student[0].name+" "+obj.student[0].surname;
+        document.getElementById('p2').innerHTML=obj.student[1].name+" "+obj.student[1].surname;
+    </script>
+</body>
+</html>

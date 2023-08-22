@@ -17,73 +17,83 @@
     <p id="p7"></p>
     <p id="p8"></p>
     <p id="p9"></p>
+    <P id="P10"></P>
 <script>
-    const subjects=["Java","C++","Python"];
-    document.getElementById('p1').innerHTML=subjects;
+    // const subjects=["Java","C++","Python"];
+    // document.getElementById('p1').innerHTML=subjects;
 
-    const sub=[];
-    sub[0]="Chem";
-    sub[1]="Bio";
-    sub[2]="Maths";
-    document.getElementById('p2').innerHTML=sub[0];
+    // const sub=[];
+    // sub[0]="Chem";
+    // sub[1]="Bio";
+    // sub[2]="Maths";
+    // document.getElementById('p2').innerHTML=sub[0];
 
-    const sub1=["Java","C++",100];
-    let len=sub1.length;
-    let t1="<ul>";
-    for(let i=0;i<len;i++)
-    {
-        t1+="<li>"+sub1[i]+"<li>";
-    }
-    t1+="</ul>";
-    document.getElementById('p3').innerHTML=t1;
+    // const sub1=["Java","C++",100];
+    // let len=sub1.length;
+    // let t1="<ul>";
+    // for(let i=0;i<len;i++)
+    // {
+    //     t1+="<li>"+sub1[i]+"<li>";
+    // }
+    // t1+="</ul>";
+    // document.getElementById('p3').innerHTML=t1;
    
-    const sub2=["Java","C++",100];
-    let text="<ul>"; 
-    sub2.push("Pascal");
-    sub2[6]=".Net";
+    // const sub2=["Java","C++",100];
+    // let text="<ul>"; 
+    // sub2.push("Pascal");
+    // sub2[6]=".Net";
 
-    sub2.forEach(myfun);
-    text+="</ul>";
+    // sub2.forEach(myfun);
+    // text+="</ul>";
     
-    function myfun(value)
-    {
-        text+="<li>"+value+"</li>";
-    }
+    // function myfun(value)
+    // {
+    //     text+="<li>"+value+"</li>";
+    // }
     
-    subjects[subjects.length];
-    document.getElementById('p4').innerHTML=text;
+    // subjects[subjects.length];
+    // document.getElementById('p4').innerHTML=text;
 
 
 
-    // const person=new Array(40);
-    const person2=[20,30,40];
-    const person3=[100,200,300];
-    const person4=[1000,2000,3000];
-    document.getElementById('p5').innerHTML=person2+person3+person4;
-    let type=typeof person2;
-    person2.pop();
-    person2.push(78);
-    person2.shift();
-    const p=person2.unshift("100");
-    delete person2[0];
-    const person5=person2.concat("Niraj");
-    document.getElementById('p6').innerHTML=person5;
+    // // const person=new Array(40);
+    // const person2=[20,30,40];
+    // const person3=[100,200,300];
+    // const person4=[1000,2000,3000];
+    // document.getElementById('p5').innerHTML=person2+person3+person4;
+    // let type=typeof person2;
+    // person2.pop();
+    // person2.push(78);
+    // person2.shift();
+    // const p=person2.unshift("100");
+    // delete person2[0];
+    // const person5=person2.concat("Niraj");
+    // document.getElementById('p6').innerHTML=person5;
 
-    const person6=[[10,20],[30,40],[50,60]];
-    const person7=person6.flat();
-    document.getElementById('p7').innerHTML=person6[2];
+    // const person6=[[10,20],[30,40],[50,60]];
+    // const person7=person6.flat();
+    // document.getElementById('p7').innerHTML=person6[2];
   
-    const vals=[50,20,70,10,100,78];
-    // const vals=["Kateshiya","Niraj"];
-    vals.splice(2,1,1000);
+    // const vals=[50,20,70,10,100,78];
+    // // const vals=["Kateshiya","Niraj"];
+    // vals.splice(2,1,1000);
    
-    const vals2=vals.slice(1,3);
-    vals.sort(function(a,b){return a-b});
-     vals.reverse();
-    document.getElementById('p8').innerHTML=vals
-    document.getElementById('p9').innerHTML=vals2
+    // const vals2=vals.slice(1,3);
+    // vals.sort(function(a,b){return a-b});
+    //  vals.reverse();
+    // document.getElementById('p8').innerHTML=vals
+    // document.getElementById('p9').innerHTML=vals2
 
 
+    const vals3=[50,20,70,10,100,78];
+    // const vals4=vals3.map(myfun);
+    // function myfun(vals3,ind,Array)
+    // {
+    //      return value+2;
+    // }
+    // document.getElementById('p10').innerHTML=vals4
+    
+    
 </script>
 </body>
 </html>
