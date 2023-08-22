@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Sorting</title>
+</head>
+<body>
+  <h1>Array Sorting</h1>
+
+  <button id="alphabeticalButton">Sort Alphabetically</button>
+  <button id="numericButton">Sort Numerically</button>
+
+  <ul id="resultList"></ul>
+
+  <script>
+    const numbers = [10,84,5,7,62,18];
+
+    
+    function displayArray(sortedArray) 
+    {
+      const resultList = document.getElementById("resultList");
+      resultList.innerHTML = sortedArray.map(item => `<li>${item}</li>`).join('');
+    }
+
+    
+    document.getElementById("alphabeticalButton").addEventListener("click", () => 
+    {
+      const sortedAlphabetically = numbers.slice().sort((a, b) => a.toString().localeCompare(b.toString()));
+      displayArray(sortedAlphabetically);
+    });
+
+   
+    document.getElementById("numericButton").addEventListener("click", () => 
+     {
+      const sortedNumerically = numbers.slice().sort((a, b) => a - b);
+      displayArray(sortedNumerically);
+    });
+  </script>
+</body>
+</html>
