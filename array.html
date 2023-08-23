@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array</title>
+</head>
+<body>
+<h1>Array</h1>
+<p>Click the button to manipulate the array:</p>
+<button onclick="manipulateArray()">Manipulate Array</button>
+<p id="output"></p>
+<script>
+function manipulateArray() 
+{
+    var fruits = ["Apple", "Banana", "Orange", "Mango"];
+    fruits.push("Grapes");
+    fruits.pop();
+    var outputElement = document.getElementById("output");
+    outputElement.innerHTML = "Array after manipulation: " + fruits.join(", ");
+}
+</script>
+</body>
+</html>
