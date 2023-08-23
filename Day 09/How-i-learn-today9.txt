@@ -1,0 +1,37 @@
+What did I learn today....?
+
+Date :- 21th August 2023.
+Time :- 01:00 PM to 02:30 PM.
+
+01) The HTML document includes a series of div elements with class "output-box" that
+    contain placeholders for displaying the results of different JavaScript programs.
+
+02) The JavaScript code manipulates arrays and performs various operations using these arrays.
+
+03) Arrays are created and modified using different methods like directly assigning values,
+    using the Array constructor, and various array methods.
+
+04) The code demonstrates array manipulation methods such as and custom looping.
+
+    •--> join 
+    •--> toString
+    •--> length
+    •--> sort 
+    •--> push 
+    •--> pop 
+    •--> shift 
+    •--> unshift 
+    •--> delete 
+    •--> concat 
+    •--> flat
+    •--> splice 
+    •--> slice    
+    •--> reverse 
+
+05) The code showcases different looping techniques, including the traditional `for` loop and the 'forEach` loop for arrays.
+
+06) JavaScript objects and arrays of numbers are used to demonstrate different concepts.
+
+07) The code employs HTML manipulation to display the results within the
+    designated output boxes. Overall, the code provides a practical illustration of
+    working with arrays in JavaScript and different methods to manipulate and modify them.

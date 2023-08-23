@@ -1,0 +1,16 @@
+What did I learn today....?
+
+Date :- 22th August 2023.
+Time :- 01:00 PM to 02:30 PM.
+
+01) The code defines an HTML document with CSS styling and JavaScript logic for creating an interactive webpage.
+02) CSS styles are used to format various elements, including output boxes and buttons.
+03) JavaScript's 'map() method is applied to modify array values, and 'filter()` method is used to extract elements meeting a certain condition.
+04) Dates and times are manipulated using JavaScript's 'Date' object, including extracting the year.
+05) JavaScript functions and arrow functions are employed for operations like string manipulation and JSON parsing.
+06) JSON data is parsed, and values are accessed from the parsed object.
+07) Event listeners respond to user actions, such as clicking a button to update content.
+08) A class is defined using ES6 class syntax, creating instances with properties.
+09) DOM manipulation is used to change content within specific elements.
+10) Overall, the code demonstrates fundamental concepts of web development
+    like CSS styling, JavaScript programming, array manipulation, event handling, and DOM manipulation.
