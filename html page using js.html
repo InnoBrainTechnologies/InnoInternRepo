@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Initialization Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Initialization Example</h1>
+    <p id="changeable-text">Click the button to change this text.</p>
+    <button id="change-button">Change Text</button>
+
+    <script>
+        // JavaScript initialization
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get references to the button and paragraph
+            const changeButton = document.getElementById('change-button');
+            const changeableText = document.getElementById('changeable-text');
+
+            // Define a function to change the text
+            function changeText() {
+                changeableText.textContent = 'Text has been changed!';
+            }
+
+            // Add a click event listener to the button
+            changeButton.addEventListener('click', changeText);
+        }
+        );
+    </script>
+</body>
+</html>

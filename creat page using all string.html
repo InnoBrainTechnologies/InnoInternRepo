@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Functions Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>String Functions Example</h1>
+
+    <label for="inputString">Enter a string:</label>
+    <input type="text" id="inputString" placeholder="Type a string">
+    <button onclick="performStringOperations()">Perform Operations</button>
+
+    <div id="output">
+        <h2>Result:</h2>
+        <p id="lengthResult"></p>
+        <p id="uppercaseResult"></p>
+        <p id="lowercaseResult"></p>
+        <p id="substringResult"></p>
+        <p id="replaceResult"></p>
+    </div>
+
+    <script>
+        function performStringOperations() {
+            const inputString = document.getElementById('inputString').value;
+
+            // Calculate the length of the string
+            const lengthResult = `Length of the string: ${inputString.length}`;
+
+            // Convert the string to uppercase
+            const uppercaseResult = `Uppercase: ${inputString.toUpperCase()}`;
+
+            // Convert the string to lowercase
+            const lowercaseResult = `Lowercase: ${inputString.toLowerCase()}`;
+
+            // Extract a substring
+            const substringResult = `Substring (2-5): ${inputString.substring(2, 5)}`;
+
+            // Replace a substring
+            const replaceResult = `Replace 'world' with 'Universe': ${inputString.replace('world', 'Universe')}`;
+
+            // Display results
+            document.getElementById('lengthResult').textContent = lengthResult;
+            document.getElementById('uppercaseResult').textContent = uppercaseResult;
+            document.getElementById('lowercaseResult').textContent = lowercaseResult;
+            document.getElementById('substringResult').textContent = substringResult;
+            document.getElementById('replaceResult').textContent = replaceResult;
+        }
+    </script>
+</body>
+</html>

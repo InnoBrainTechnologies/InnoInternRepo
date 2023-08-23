@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Sorting</title>
+</head>
+<body>
+    <button id="alphabeticalButton">Sort Alphabetically</button>
+    <button id="numericButton">Sort Numerically</button>
+    <div id="output"></div>
+
+    <script>
+        // Initial array of numbers
+        var numbers = [7, 3, 11, 1, 5];
+
+        // Function to display the array in the specified order
+        function displayArray(arr, order) {
+            var outputDiv = document.getElementById("output");
+            outputDiv.innerHTML = "";
+
+            if (order === "alphabetical") {
+                // Sort the array alphabetically
+                arr.sort(function(a, b) {
+                    return a.toString().localeCompare(b.toString());
+                });
+            } else if (order === "numeric") {
+                // Sort the array numerically
+                arr.sort(function(a, b) {
+                    return a - b;
+                });
+            }
+
+            // Display the sorted array
+            outputDiv.innerHTML = arr.join(", ");
+        }
+
+        // Button click event handlers
+        document.getElementById("alphabeticalButton").addEventListener("click", function() {
+            displayArray(numbers.slice(), "alphabetical");
+        });
+
+        document.getElementById("numericButton").addEventListener("click", function() {
+            displayArray(numbers.slice(), "numeric");
+        });
+
+        // Initial display
+        displayArray(numbers, "numeric"); // Display the initial array in numeric order
+    </script>
+</body>
+</html>
