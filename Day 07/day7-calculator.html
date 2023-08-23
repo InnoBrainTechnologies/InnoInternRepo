@@ -1,87 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Created by Dhruv</title>
-    <style>
-        /* Internal CSS */
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .calculator {
-            width: 400px;
-            margin: 0 auto;
-            padding: 90px;
-            border: 2px solid #000000;
-            border-radius: 20px;
-            background-color: #00d9ff;
-        }
-        input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 2px solid #000000;
-            border-radius: 10px;
-        }
-        button {
-            width: 70px;
-            height: 40px;
-            font-size: 18px;
-            margin: 5px;
-            border: 2px solid #000000;
-            border-radius: 90px;
-            cursor: pointer;
-        }
-        #result {
-            font-size: 20px;
-            margin-top: 10px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Created by Dhruv</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  .calculator {
+    width: 300px;
+    margin: 0 auto;
+    padding: 70px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  }
+  .btn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgb(113, 113, 113);
+  }
+  .btn.operator {
+    background-color: #f0ad4e;
+    color: white;
+  }
+  .btn.equal {
+    background-color: #5bc0de;
+    color: white;
+  }
+  /* New styles for the display input field */
+  #display {
+    font-size: 24px;
+    padding: 10px;
+    margin: 20px -20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgb(113, 113, 113);
+  }
+</style>
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="num1" placeholder="Enter number">
-        <input type="text" id="num2" placeholder="Enter number">
-        <button onclick="calculate('+')">+</button>
-        <button onclick="calculate('-')">-</button>
-        <button onclick="calculate('*')">x</button>
-        <button onclick="calculate('/')">÷</button>
-        <div id="result">Calculation = </div>
-    </div>
-    
-    <script>
-        function calculate(operator) {
-            var num1 = parseFloat(document.getElementById("num1").value);
-            var num2 = parseFloat(document.getElementById("num2").value);
-            var resultElement = document.getElementById("result");
-            
-            if (isNaN(num1) || isNaN(num2)) {
-                resultElement.textContent = "Invalid input";
-                return;
-            }
-            
-            var result;
-            switch (operator) {
-                case '+':
-                    result = num1 + num2;
-                    break;
-                case '-':
-                    result = num1 - num2;
-                    break;
-                case '*':
-                    result = num1 * num2;
-                    break;
-                case '/':
-                    result = num1 / num2;
-                    break;
-                default:
-                    result = "Invalid operator";
-            }
-            
-            resultElement.textContent = "Result: " + result;
-        }
-    </script>
+  <div class="calculator">
+    <h3>Calculator</h3>
+    <input type="text" id="display" readonly>
+     <br>
+    <button class="btn" onclick="appendToDisplay('7')">7</button>
+    <button class="btn" onclick="appendToDisplay('8')">8</button>
+    <button class="btn" onclick="appendToDisplay('9')">9</button>
+    <button class="btn operator" onclick="appendToDisplay('+')">+</button>
+    <br>
+    <button class="btn" onclick="appendToDisplay('4')">4</button>
+    <button class="btn" onclick="appendToDisplay('5')">5</button>
+    <button class="btn" onclick="appendToDisplay('6')">6</button>
+    <button class="btn operator" onclick="appendToDisplay('-')">-</button>
+    <br>
+    <button class="btn" onclick="appendToDisplay('1')">1</button>
+    <button class="btn" onclick="appendToDisplay('2')">2</button>
+    <button class="btn" onclick="appendToDisplay('3')">3</button>
+    <button class="btn operator" onclick="appendToDisplay('*')">*</button>
+    <br>
+    <button class="btn" onclick="appendToDisplay('0')">0</button>
+    <button class="btn" onclick="clearDisplay()">C</button>
+    <button class="btn equal" onclick="calculate()">=</button>
+    <button class="btn operator" onclick="appendToDisplay('/')">/</button>
+  </div>
+  <script>
+    function appendToDisplay(value) {
+      document.getElementById("display").value += value;
+    }
+
+    function clearDisplay() {
+      document.getElementById("display").value = "";
+    }
+
+    function calculate() {
+      const expression = document.getElementById("display").value;
+      const result = eval(expression);
+      document.getElementById("display").value = result;
+    }
+  </script>
 </body>
 </html>
