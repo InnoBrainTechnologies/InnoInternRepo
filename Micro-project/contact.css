@@ -1,0 +1,116 @@
+/* Reset default margin and padding */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.logo img {
+  width: 50px; 
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: #fff;
+  margin: 0; 
+}
+ 
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  ul.menu
+  {
+    margin-top: 20px;
+    text-align: center;
+     color: white;
+     list-style: none;
+  }
+
+  ul.menu li
+  {
+     display: inline-block;
+     margin-right: 10px;
+  }
+
+  ul.menu li a
+  {
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     padding: 5px 10px;
+     border: 3px solid green;
+     border-radius: 6px;
+     background-color: rgb(21, 20, 20);
+     transition:background-color;
+  }
+
+  ul.menu li a:hover
+  {
+     background-color:rgb(201, 16, 16);
+     color: rgb(255, 255, 255);
+  }
+
+  nav ul li a:hover
+  {
+    font-style: italic;
+    color: black;
+    background-color: aliceblue;
+    border: 2px solid black;
+  }
+  
+  main 
+  {
+
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 150px;
+    border: 3px inset #333;
+    border-radius: 15px;
+  }
+  
+  form 
+  {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .form-group label 
+  {
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover
+   {
+    font-style: italic;
+     color:#333;
+     background-color:cornsilk;
+     border:2px solid #333;
+   }
+  

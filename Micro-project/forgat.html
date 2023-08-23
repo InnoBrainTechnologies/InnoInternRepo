@@ -1,0 +1,99 @@
+<html>
+<head>
+  <title>registration page</title>
+<style>
+body 
+{
+  background-image: url('wall-2.jpg');
+  text-align: center;
+}
+
+.conteiner {
+  text-align: center;
+
+  background-size: cover;
+  margin: auto;
+  margin-top: auto;
+  margin-bottom: 1%;
+  padding-bottom: 3%;
+  border: 5px solid black;
+}
+
+h1 {
+  margin-top: 150px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.box {
+  border: 4px solid black;
+  border-radius: 20px;
+  margin: 20px;
+  margin-bottom: 5%;
+  padding-bottom: 1%;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-weight: bold;
+}
+
+.button {
+  text-align: center;
+  width: 300px;
+  height: 35px;
+  width: 100px;
+  border-radius: 100px;
+}
+
+</style>
+</head>
+<div class="conteiner">
+<body>
+
+  <h1>Registration Form</h1>
+  <div class="box">
+
+    <center><label for="Email">Enter email:</label></center>
+    <input type="email" id="Email"><br><br>
+
+    <center><label for="pwd">Enter password:</label></center>
+    <input type="password" id="pwd"><br><br>
+
+    <center><label for="rpwd">Retype password:</label></center>
+    <input type="password" id="rpwd"><br><br>
+
+
+    <center><button class="button"onclick="register()" >Register</button></center><br>
+
+  </div>
+
+  <script>
+    function register() 
+    {
+      var email = document.getElementById("Email").value;
+      var password = document.getElementById("pwd").value;
+      var retypePassword = document.getElementById("rpwd").value;
+     
+
+  if (email.trim() === "" || password.trim() === "" || retypePassword.trim() === "" ) 
+  {
+    alert("Please fill in all the required fields.");
+    return;
+  }
+
+  if (password !== retypePassword) {
+    alert("Passwords do not match.");
+    return;
+  }
+
+  // Store the registration email in localStorage
+  localStorage.setItem("registrationEmail", email.toLowerCase());
+
+  alert("Registered successfully!");
+  window.location.href ="micro-project.html"; // Redirect to the next page
+}
+  </script>
+</body>
+</div>
+</html>

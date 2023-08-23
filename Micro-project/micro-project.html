@@ -1,0 +1,132 @@
+<html>
+<head>
+	<title>login page</title>
+<style>
+/* Global styles */
+body 
+{
+	color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.bg
+{
+    background-image: url('wall-1.jpg');
+	background-size: cover;
+	text-align: center;
+	border: 5px solid gray;
+}
+.u{
+	text-align: center;
+	border: 4px solid black;
+	border-radius: 20px;
+	margin: auto;
+	margin-bottom: 5%;
+	padding-bottom: 1%;
+	margin-left: 25%;
+	margin-right: 25%;
+	font-weight:bold;
+	font-size: 20PX;
+}
+
+/* Header styles */
+h1 {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.button
+{
+	text-align: center;
+    width: 300px;
+	height: 35px;
+	width: 100px;
+	border-radius: 100px;
+	text-decoration: none;
+}
+.button:hover
+{
+	background-color:wheat;
+  
+}
+
+.lbutton
+{
+	--c: no-repeat linear-gradient(#f219bf 0 0);
+  background: 
+    var(--c)  calc(-101% + var(--p,0%)) 100% / 50.1% var(--p,.08em),
+    var(--c)  calc( 201% - var(--p,0%)) 0    / 50.1% var(--p,.08em);
+  transition: .3s var(--t,0s), background-position .3s calc(.3s - var(--t,0s));
+  background-color: blanchedalmond;
+  border: 5px;
+  border-color: white;
+  border-radius: 10px;
+  height: 20px;
+  width: 100px;
+  margin-top: 10px;
+	
+}
+.lbutton:hover
+{
+	--p: 101%;
+  --t: 0.3s;
+}
+
+a
+{
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+	<div class="bg">
+		<br>
+		<h1>S.S.P.V.M HOSTEL</h1><br><br>
+		<div class="u">
+			<h2>Log in</h2>
+			<p>Enter your Personal Information</p>
+			
+			<input type="email" id="email"  name="email"  placeholder="email"><br><br>
+									
+			<input type="password" id="password" name="password" placeholder="password"><br><br>
+									
+			
+			<center><button class="lbutton"><a href="forgat.html"target="_blank">Ragistration</a></button></center><br>
+								
+	        <p>Already have an account? <a href="home.html">Log In</a></p>
+        </div>
+		</div>									
+	</div>
+
+
+<script>
+function login() 
+{
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var captcha = document.getElementById("captcha").value;
+
+  if (email.trim() === "" || password.trim() === "" || captcha.trim() === "") 
+  {
+    alert("Please fill in all the required fields.");
+    return;
+  }
+
+  // Check if the login email matches the registration email stored in localStorage
+  var registrationEmail = localStorage.getItem("registrationEmail");
+  if (registrationEmail && email.toLowerCase() === registrationEmail.toLowerCase())
+   {
+    alert("Login successful!");
+    window.location.href = "next.html"; // Redirect to the next page
+  } 
+  else 
+  {
+    alert("Email is not valid.");
+  }
+}
+</script>
+</body>
+</html>
