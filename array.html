@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="output"></p>
+    <button id="originalButton">Original Order</button>
+    <button id="alphabeticalButton">Alphabetical Order</button>
+    <button id="numericButton">Numeric Order</button>
+
+    <script>
+        const originalArray = [50, 20, 70, 10, 100, 78];
+        // document.getElementById("output").innerHTML = originalArray;
+
+        const outputElement = document.getElementById("output");
+        const alphabeticalButton = document.getElementById("alphabeticalButton");
+        const numericButton = document.getElementById("numericButton");
+
+        alphabeticalButton.addEventListener("click", function () {
+            const sortedArray = [...originalArray].sort();
+            outputElement.textContent = sortedArray.join(", ");
+        });
+
+        numericButton.addEventListener("click", function () {
+            const sortedArray = [...originalArray].sort(function (a, b) {
+            return a - b;
+        });
+            outputElement.textContent = sortedArray.join(", ");
+        });
+
+
+        originalButton.addEventListener("click", function(){
+            const orgArray = originalArray;
+            outputElement.textContent = orgArray.join(", ");
+        });
+
+
+    </script>
+</body>
+</html>
