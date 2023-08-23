@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Manipulation</title>
+</head>
+<body>
+    
+       <p id="p1"></p></div>
+        <p id="p2"></p></div>
+
+        <script>
+            // map() ---> looping method
+            const vals1 = [50, 20, 70, 10, 100, 78];
+            const vals2 = vals1.map(myfunMap);
+
+            function myfunMap(value, index, array) {
+                return value + 2;
+            }
+            document.getElementById('p1').innerHTML = vals2;
+
+            // filter() ---> condition method
+            const vals3 = vals1.filter(myfunFilter);
+
+            function myfunFilter(value, index, array) {
+                return value > 30;
+            }
+            document.getElementById('p2').innerHTML = vals3;
+        </script>
+    </div>
+</body>
+</html>

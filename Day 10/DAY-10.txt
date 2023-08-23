@@ -1,0 +1,171 @@
+Day-10:
+
+
+Today Task:--
+1). Creates files of HTML and perfrom all the concepts what we have learned today in Javascript.
+
+
+
+.map()-->Looping
+
+.filter()-->Condition
+
+
+this keyword-->Current Object refer--> variable,method,event binding
+
+Arrow Function-->Es6-->shorter
+
+class and constructor
+-->class--class is a template for an object.
+-->constructor it is call automatically when we create object.
+
+
+Modules
+Named exports
+
+JSON -->Javascript Object Notation
+-->data interchange-->independent
+{
+"student":[
+{"sem":1},
+{"res":"grading"}
+]
+}
+name--> value pair
+data-->comma
+curly-->object
+square bracket -->array
+
+JSON.parse()
+
+Today Code:
+
+1)ClassFile
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+<script>
+class Subject{
+
+        constructor(subname,sem){
+            this.subname=subname;
+            this.sem=sem;
+        }
+}
+const sub1=new Subject("Java",5);
+const sub2=new Subject("Python",1);
+
+document.getElementById('p1').innerHTML=sub1.subname+" "+sub1.sem;
+document.getElementById('p2').innerHTML=sub2.subname+" "+sub2.sem;
+</script>
+</body>
+</html>
+
+2)Arrow Function
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+<script>
+    const myfun =val=>"Hello "+val;
+    
+    document.getElementById('p1').innerHTML=myfun("Anil");
+</script>
+</body>
+</html>
+
+3)Json file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">
+
+    </p>
+<script>
+    let t1='{"students":['+
+                        '{"name":"Pruthvi","surname":"Patel"},'+
+                        '{"name":"Anil","surname":"Munani"}]}';
+                            
+     const obj=JSON.parse(t1);
+     document.getElementById('p1').innerHTML=obj.students[1].name+" "+obj.students[1].surname;
+</script>
+</body>
+</html>
+
+4)This Keyword
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="p1"></p>
+
+<button onclick="this.style.display='none'">Click here</button>
+<script>
+    // const user={
+    //     "name":"Pruthvi",
+    //     "surname":"Patel",
+    //     "fullname":function(){ return this.name+" "+this.surname}
+    // };
+    //  let a=this;
+
+    //  function myfun()
+    //  {
+    //     return this;
+    //  }
+    // document.getElementById('p1').innerHTML=myfun();
+    
+</script>
+</body>
+</html>
+
+5)User html file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="p1"></p>
+
+<script type="module">
+    import user from "./user.js";
+
+    //  let t1="Username:"+username+"Password:"+psw;
+     document.getElementById('p1').innerHTML=user();
+</script>
+</body>
+</html>
+
+==>User.js
+function userdetails()
+{
+const username="Anil";
+const psw="12345";
+
+return username+ " "+psw;
+}
+export default userdetails;
+
