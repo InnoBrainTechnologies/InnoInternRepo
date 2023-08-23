@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK Bank Registration</title>
+    <link rel="stylesheet" href="Registration.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RK Bank Registration</h1>
+        <form id="signup-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="Account number">Account number:</label>
+            <input type="number" id="account-number" name="account-number" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit">Registration</button>
+        </form>
+        <p id="message"></p>
+        <p class="login-link">Already have an account? <a href="loging.html">Login</a></p>
+    </div>
+    <script src="Registration.js"></script>
+</body>
+</html>
