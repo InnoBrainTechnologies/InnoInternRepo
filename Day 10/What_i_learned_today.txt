@@ -1,0 +1,16 @@
+Today i have learned 
+
+1) How to Use an Import Statement
+2) How to Attach an Event Listener
+3) How to Define an Arrow Function
+4) How to Manipulate the DOM
+5) How to Parse JSON Data
+6) How to Define Classes
+7) How to Create Objects
+8) How to Select Elements Using a Query Selector
+9) How to Implement Callback Functions
+10) How to Invoke Functions
+11) How to Concatenate Strings
+12) How to Utilize Template Literals
+13) How to Apply ES6 Module Syntax
+14) How to Employ ES6 Destructuring
