@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+<p id="p6"></p>
+<p id="p7"></p>
+<p id="p8"></p>
+<p id="p9"></p>
+<p id="p10"></p>
+<p id="p11"></p>
+<p id="p12"></p>
+<p id="p13"></p>
+
+<script>
+let str1="Hello ";
+let str2="World!!";
+document.getElementById('p1').innerHTML=str1+str2+" Welcome to the computer world";
+document.getElementById('p2').innerHTML=str1.length;
+document.getElementById('p2').innerHTML=" Hello "+
+"Computer!!"
+
+/********************************************************/
+let str3="Hii";
+let strobj=String("Hii");
+document.getElementById('p3').innerHTML=(str3===strobj);
+
+/********************************************************/
+// Slice Method
+let t1="Java,JavaScript,Python,C++,C#";
+let t2=t1.slice(-10,-5);
+document.getElementById('p4').innerHTML=t2;
+
+/********************************************************/
+// substring() substr()
+let t3 = "x1,y1,x2,y2";
+let t4 = t3.substr(4, 8);
+document.getElementById('p5').innerHTML = t4;
+
+/********************************************************/
+// replace string
+let t5="Java, python ,C#, Java";
+let newt5=t5.replaceAll("Java","JavaScript");
+document.getElementById('p6').innerHTML=newt5;
+
+/*******************************************************/
+// concatenation
+newt5=t5.toLowerCase();
+document.getElementById('p7').innerHTML=newt5;
+
+let t6="Hello";
+let t7="InnoBrain";
+let t8=t1.concat(" ",t2);
+document.getElementById('p8').innerHTML=t8;
+
+/*******************************************************/
+// trim(), padstart()
+
+let t9="Coding";
+let t10=t9.padEnd(10,"#");
+document.getElementById('p9').innerHTML=t10;
+
+/*******************************************************/
+//charAt()
+let t11="t1,t2,t3,t4";
+let t12=t11.charAt(7);
+const myArr=t11.split(",");
+let char=t11[1];
+document.getElementById('p10').innerHTML=myArr[0];
+
+let str="Hello, This is Rudraa from BBIT";
+let ind=str.search("Rudraa");
+document.getElementById('p11').innerHTML=ind;
+
+/*******************************************************/
+// back-tick
+let n1 = 10;
+let n2 = 20;
+let strng1 = "hello";
+let strng2 = "duniya";
+let x1 = `${strng1}, ${strng2}, ${n1+n2}`;
+
+document.getElementById('p12').innerHTML=x1;
+
+let hd = "List of Languages";
+let lang = ["Java", "C#", "Python"]
+
+let ht = `<h2> ${hd}</h2><ul>`;
+for(const i of lang)
+{
+    ht+=`<li>${i}</li>`;
+}
+ht+=`</ul>`;
+document.getElementById('p13').innerHTML=ht;
+
+</script>
+</body>
+</html>
