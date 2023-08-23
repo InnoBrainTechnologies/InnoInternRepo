@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Concepts</title>
+</head>
+<body>
+    <h1>JavaScript Concepts</h1>
+    
+    <!-- Display a message using JavaScript -->
+    <p id="message">This is a JavaScript example.</p>
+
+    <!-- Button to change the message -->
+    <button id="changeMessageBtn">Change Message</button>
+
+    <!-- Button to toggle visibility -->
+    <button id="toggleVisibilityBtn">Toggle Visibility</button>
+
+    <!-- JavaScript code -->
+    <script>
+        // Select elements
+        const messageElement = document.getElementById("message");
+        const changeMessageBtn = document.getElementById("changeMessageBtn");
+        const toggleVisibilityBtn = document.getElementById("toggleVisibilityBtn");
+
+        // Event listener for changing the message
+        changeMessageBtn.addEventListener("click", function() {
+            messageElement.textContent = "Message changed by JavaScript!";
+        }
+        );
+
+        // Event listener for toggling visibility
+        toggleVisibilityBtn.addEventListener("click", function() {
+            if (messageElement.style.display === "none") {
+                messageElement.style.display = "block";
+            } else {
+                messageElement.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
