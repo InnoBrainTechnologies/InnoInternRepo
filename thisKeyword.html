@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+
+    <button onclick="this.style.display='none'; displayFullName()">Click here</button>
+    <script>
+        const user = {
+            "name": "Rudraa",
+            "surname": "Gor",
+            "fullname": function() { return this.name + " " + this.surname; }
+        };
+
+        function test() {
+            return user.fullname(); // Call fullname method of the user object
+        }
+
+        function displayFullName() {
+            document.getElementById('p1').innerHTML = test();
+        }
+    </script>
+</body>
+</html>
