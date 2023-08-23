@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+
+<script>
+/**************************************************************************/
+// list of subjects
+let hd1 = "Subjects";
+let sub = ["Java", "DSA", "Python"]
+
+let ht1 = `<h2> ${hd1}</h2><ul>`;
+for(const i of sub)
+{
+    ht1+=`<li>${i}</li>`;
+}
+ht1+=`</ul>`;
+document.getElementById('p1').innerHTML=ht1;
+
+
+/**************************************************************************/
+// list of hobbies
+let hd2 = "Hobbies";
+let hobbies = ["coding", "music", "art"]
+
+let ht2 = `<h2> ${hd2}</h2><ul>`;
+for(const i of hobbies)
+{
+    ht2+=`<li>${i}</li>`;
+}
+ht2+=`</ul>`;
+document.getElementById('p2').innerHTML=ht2;
+
+
+/**************************************************************************/
+// list of Grocery items
+let hd3 = "Grocery items";
+let items = ["ice-cream", "cheese", "bread"]
+
+let ht3 = `<h2> ${hd3}</h2><ul>`;
+for(const i of items)
+{
+    ht3+=`<li>${i}</li>`;
+}
+ht3+=`</ul>`;
+document.getElementById('p3').innerHTML=ht3;
+
+</script>
+</body>
+</html>
