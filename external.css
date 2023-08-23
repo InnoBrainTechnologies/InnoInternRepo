@@ -1,0 +1,8 @@
+.container{
+    color: chartreuse;
+    background-color: bisque;
+    font-size: 25px;
+    height: auto;
+    width: auto;
+    padding: 20px;
+}
