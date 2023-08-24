@@ -42,4 +42,4 @@ This repository contains my internship project completed at Innobrain Technologi
 
 For any inquiries or feedback, feel free to reach out to me at [mail@patelsujal.in](mailto:mail@patelsujal.in)
 
-Made with ❤️ by Sujal Patel
+Made with ❤️ by [Sujal Patel](https://patelsujal.in)
