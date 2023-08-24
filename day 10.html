@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Array Manipulation</title>
+    <style>
+
+        /* Add CSS for the output box */
+        .main-output-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 200px;
+            background-color: #ee5f96;
+            border-radius: 20px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+  
+        /* Add CSS for the output box */
+        .output-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary {
+        background-color: #ee83b9;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #000000;
+        
+    </style>
+</head>
+<body>
+    <div class="main-output-box">
+        <div class="output-box" align="center"><h2>All programs of JavaScript</h2></div>
+
+        <div class="output-box"><h3>Program 1 (map):</h3><p id="p1"></p></div>
+        <div class="output-box"><h3>Program 2 (filter):</h3><p id="p2"></p></div>
+        <div class="output-box"><h3>Program 3 (Date & Time):</h3><p id="p3"></p></div>
+        <div class="output-box"><h3>Program 4 (Full Year):</h3><p id="p4"></p></div>
+
+        <div class="output-box"><h3>Program 5 :</h3><p id="p5"></p></div>
+        <div class="output-box"><h3>Program 6 :</h3><p id="p6"></p></div>
+        <div class="output-box"><h3>Program 7 :</h3><p id="p7"></p></div>
+
+        <!-- Output box for program 7 -->
+        <div class="output-box">
+            <h3>Program 8 :</h3>
+            <p id="p7-output"></p>
+            <!-- Button to trigger updateContent function -->
+            <button class="btn-primary">User defined</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const vals1 = [20,30,50,60,22,30,444];
+
+            // Program 1: map()
+            const vals2 = vals1.map(myfunMap);
+            function myfunMap(value, index, array) {
+                return value + 2;
+            }
+            document.getElementById('p1').textContent = vals2;
+
+            // Program 2: filter()
+            const vals3 = vals1.filter(myfunFilter);
+            function myfunFilter(value, index, array) {
+                return value > 30;
+            }
+            document.getElementById('p2').textContent = vals3;
+
+            // Program 3: Date & Time
+            const mydate = new Date("24 August 2023 20:14:15");
+            document.getElementById('p3').textContent = mydate;
+
+            // Program 4: Full Year
+            const mydate1 = new Date("24 August 2023 20:14:15");
+            document.getElementById('p4').textContent = mydate1.getFullYear();
+
+            // Program 5
+            const myfun = (val) => "Dhwani " + val;
+            document.getElementById("p5").textContent = myfun("vyas");
+
+            // Program 6
+            const randomJson = '{"students":[{"name":"Dhwani","surname":"Lel"},{"name":"Dhwani","surname":"Vyas"}]}';
+            const obj = JSON.parse(randomJson);
+            document.getElementById("p6").textContent = obj.students[0].name + " " + obj.students[1].surname;
+
+            // Program 7
+            function userdetails() {
+                return "User Details -Dhwani vyas"; // Replace with actual user details
+            }
+            document.getElementById("p7").textContent = userdetails();
+
+            // Program 8
+            class Subject {
+                constructor(subname, sem) {
+                    this.subname = subname;
+                    this.sem = sem;
+                }
+            }
+            const sub1 = new Subject("java Sem :-", 2);
+            const sub2 = new Subject("Maths Sem :-", 3);
+            const p7Element = document.getElementById("p7-output");
+            const buttonElement = document.querySelector(".btn-primary");
+            function updateContent() {
+                p7Element.textContent = sub1.subname + " " + sub2.sem;
+                buttonElement.style.display = "none";
+            }
+            buttonElement.addEventListener("click", updateContent);
+
+        });
+    </script>
+</body>
+</html>
