@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 175px;
+        font-family: "Signaturex Demo";
+      }
+
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: "Myriad Pro";
+      }
+
+      .cls-3 {
+        font-size: 141.667px;
+        font-family: "Myriad Variable Concept";
+      }
+    </style>
+  </defs>
+  <text id="Megh_soni_s" data-name="Megh soni’s" class="cls-1" x="295.5" y="396.563">Megh soni<tspan class="cls-2">’</tspan>s</text>
+  <text id="PHOTOGRAPHY" class="cls-3" x="339.001" y="743.063">PHOTOGRAPHY</text>
+</svg>
