@@ -127,14 +127,15 @@ DAY 8
    - .splice() - adds or removes elements in an array
    - .slice() - extracts a portion of an array
    
-8) Leant Sorting and Reversing:
+8) Learnt Sorting and Reversing:
    - .sort()
    - .reverse()
    - Sorting numerically: vals.sort(function(a, b) { return a - b; })
 
 DAY 9
 
-1)
+1)Learnt bootstrap 
+2)Assigned with a bootstrap project.
 
 
 
