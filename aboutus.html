@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+
+body, h1, h2, h3, p, ul, li 
+        {
+            margin: 10px;
+            padding: 10px;
+        }
+header 
+        {
+            background-color:lightgray;
+            color:black;
+            padding: 10px;
+            box-shadow: 10px 5px 5px black;
+        }
+
+        nav 
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo img 
+        {
+            width: 100px;
+            height: auto;
+        }
+
+        .nav-links 
+        {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li 
+        {
+            margin-right: 20px;
+            font-size: 25px;
+            font-family:initial;
+            font-weight: bold;
+        }
+
+        .nav-links a 
+        {
+            text-decoration: none;
+            color:crimson;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover 
+        {
+            color:brown
+        }
+
+
+
+
+
+
+
+        
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+}
+
+.aboutus {
+    background-color:gray;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.aboutus h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+
+
+.paragraph {
+    flex: 1;
+    padding: 3px;
+    background-color:darkgray;
+    color:black;
+    font-size: larger;
+    font-family:sans-serif;
+
+}
+
+.paragraph h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.image img {
+    max-width: 1950px;
+    height: 1000px;
+    box-shadow: 0 0 10px black;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    height: 500px;
+    
+    
+}
+
+.map {
+    flex: 1;
+    margin-right: 20px;
+    background-color: slategray;
+}
+
+.map iframe {
+    width: 700px;
+    height: 400px;
+    border: none;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+.location {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    margin-right: 100px;
+    margin-top: 170px;
+}
+
+.location h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.location h3 {
+    font-size: 25px;
+    color:thistle;
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpeg" alt="FlexDrive Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="website.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header><br>
+
+
+
+
+    <div class="aboutus">
+        <h1>About us</h1>
+    </div>
+
+
+
+    <div class="paragraph">
+        
+            <h2>At Flex Drive, we redefine the way you buy and experience cars. With a passion for quality and a commitment to innovation, we've established ourselves as a trusted name in the automotive industry. Our mission is to provide a seamless and customer-centric car buying journey that adapts to your needs.</h2>
+
+            <h2>With a diverse range of meticulously selected vehicles, we offer more than just cars  we offer a lifestyle. Whether you're seeking a sleek sedan, a spacious SUV, or a powerful truck, our collection caters to every preference and requirement. Each vehicle on our lot undergoes rigorous inspection and certification, ensuring that you drive away with not just a car, but a reliable companion</h2>
+            
+            <h2>At Flex Drive, we pride ourselves on transparency, integrity, and convenience. Our experienced team is here to guide you through the process, answering your questions and helping you make informed decisions. Whether you're a first-time buyer or a seasoned enthusiast, we're dedicated to making your car-buying experience flexible and enjoyable.</h2>
+
+        
+    </div>
+
+
+
+    <div class="image">
+        <img src="c4.jpg" alt="image">
+    </div>
+
+
+    <div class="map">
+        <div class="location">
+        <p>
+            <h2>location</h2>
+            <h3>Anand , Gujarat</h3>
+        </p>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13689.933054725777!2d72.96260619999999!3d22.564801899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1a100d5ee56633%3A0xa2c06891f4d0c20c!2sAnand%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1629217462342!5m2!1sen!2sin"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0">
+        </iframe>
+        
+    </div>
+
+
+
+</body>
+</html>

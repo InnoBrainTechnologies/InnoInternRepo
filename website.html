@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Drive</title>
+    <style>
+            
+        body, h1, h2, h3, p, ul, li 
+        {
+            margin: 10px;
+            padding: 10px;
+        }
+        header 
+        {
+            background-color:lightgray;
+            color:black;
+            padding: 10px;
+            box-shadow: 10px 5px 5px black;
+        }
+
+        nav 
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo img 
+        {
+            width: 100px;
+            height: auto;
+        }
+
+        .nav-links 
+        {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li 
+        {
+            margin-right: 20px;
+            font-size: 25px;
+            font-family:initial;
+            font-weight: bold;
+        }
+
+        .nav-links a 
+        {
+            text-decoration: none;
+            color:crimson;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover 
+        {
+            color:brown
+        }
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .image-container {
+            position: relative;
+            text-align: center;
+            
+        }
+
+        .image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bolder;
+            
+        }
+
+        .image-text h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .image-text p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .image{
+            text-align: center;
+            opacity: 90%;
+            
+        }
+
+        .our{
+            background-color: slategray;
+            height: 50px;
+            text-align: center;
+            font-size: larger;
+            font-family:serif;
+            color:black;
+            text-decoration: underline;
+        }
+
+
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 20px;
+            max-width: 100%;
+            max-height: 100%;
+            background-color:slategray;
+
+        }
+
+        .image-card {
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+            
+        }
+
+        .image-card img {
+            max-width: 100%;
+            height: 300px;
+            width: 700px;
+        }
+
+
+
+
+            .text{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 20px;
+            text-align: center;
+            height: 100px;
+            background-color:slategrey
+            }
+
+            .text-card{
+                flex: 1;
+            margin: 0 10px;
+            text-align: center;
+            }
+
+            .text-card{
+            background-color: rgba(0, 0, 0, 0.7);
+            color:thistle;
+            padding: 5px 10px;
+            font-size: larger;
+
+
+            }
+            .button
+            {
+                flex: 1;
+                margin: 0 10px;
+                text-align: center;
+                margin-top: 10px;
+                padding: 8px 16px;
+                background-color:blue;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                
+            }
+
+
+
+
+            .end-block {
+            background-color:thistle;
+            padding: 10px 0;
+            text-align:left;
+
+        }
+
+        .social-icons {
+            margin-bottom: 100px;
+            text-align: left;
+            margin-left: 10px;
+
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-icons img {
+            width: 32px;
+            height: 32px;
+        }
+
+        p {
+            font-size: 14px;
+            color:white
+            margin: 0;
+        }
+
+
+
+
+
+
+
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpeg" alt="FlexDrive Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="website.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header><br>
+
+    <div class="image-container">
+        <img src="meter.jpg" alt="Image" height="600px" width="1500px" style="opacity: 60%;">
+        <div class="image-text">
+            <h2>Upgrade Your Ride</h2>
+            <h7>Discover the perfect car for your needs at Flex Drive</h7>
+        </div>
+    </div>
+
+
+    
+    <div class="image">
+        <img src="rr.jpg" alt="" height="100%" width="100%">
+    </div><br><br>
+
+    
+
+    <div class="our">
+        <h1>Our Services</h1>
+    </div>
+
+
+ 
+   
+    <div class="image-row">
+        <div class="image-card">
+            <img src="c1.jpg" alt="Image 1">
+            <div class="image-text"></div>
+        </div>
+        <div class="image-card">
+            <img src="c2.jpg" alt="Image 2">
+            <div class="image-text"></div>
+        </div>
+        <div class="image-card">
+            <img src="c3.jpg" alt="Image 3">
+            <div class="image-text"></div>
+        </div>
+    </div>
+   
+    <div class="text">
+        <div class="text-card">
+            <h1>Quality Assurance</h1>
+            <p>We thoroughly inspect all our cars before listing them on our website. Your satisfaction is our top priority.</p>
+            <div class="input">
+                <input type="button" class="button" value="More Info">
+            </div>
+        </div>
+        <div class="text-card">
+            <h1>Flexible Financing</h1>
+            <p>We offer a variety of financing options to meet your needs and budget. </p>
+            <div class="input">
+                <input type="button" class="button" value="More Info">
+            </div>
+        </div>
+        <div class="text-card">
+            <h1>Expert Advice</h1>
+            <p>Our team of experienced and knowledgeable professionals is here to answer.</p>
+            <div class="input">
+             <input type="button" class="button" value="More Info" >
+            </div>
+        </div>
+    </div><br>
+
+
+
+
+    <div class="end-block">
+        <h1>Flex Drive</h1>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/"><img src="insta.png" alt="Instagram"></a>
+            <a href="https://twitter.com/"><img src="twitter.png" alt="Twitter"></a>
+            <a href="https://www.facebook.com/"><img src="facebook.png" alt="Facebook"></a>
+            
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
