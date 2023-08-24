@@ -93,6 +93,46 @@ DAY 7
 
 DAY 8
 
+1)String Functions
+2)Numeric Function
+3)String--> Group of characters
+
+4)-->Function
+   .length 
+   .slice
+5)-->Substr
+   .replace
+   .replaceAll
+
+6)-->Case insensitive --> /string/i
+7)-->Global match --> /string/g
+
+8)-->toUppercase method
+9)-->toLowercase method
+10)
+.concat
+.trim
+.trimStart
+.trimEnd
+.padstart
+.padEnd
+.charAt
+.split
+.indexof()
+.lastIndexOf()
+
+search
+startWith()
+endWith()
+
+11)-->Template Literals
+
+12)-->Backticks `Hello`
+
+
+
+DAY 9
+
 1)Information about array and some new keywords such as
    - .toString()
    - .length
@@ -132,7 +172,42 @@ DAY 8
    - .reverse()
    - Sorting numerically: vals.sort(function(a, b) { return a - b; })
 
-DAY 9
+DAY 10
+
+1).map()-->Looping
+
+2).filter()-->Condition
+
+
+3)this keyword-->Current Object refer--> variable,method,event binding
+
+4)Arrow Function-->Es6-->shorter
+
+5)class and constructor
+-->class--class is a template for an object.
+-->constructor it is call automatically when we create object.
+
+
+6)Modules
+Named exports
+
+7)JSON -->Javascript Object Notation
+-->data interchange-->independent
+{
+"student":[
+{"sem":1},
+{"res":"grading"}
+]
+}
+name--> value pair
+data-->comma
+curly-->object
+square bracket -->array
+
+JSON.parse()
+
+
+DAY 11
 
 1)Learnt bootstrap 
 2)Assigned with a bootstrap project.
