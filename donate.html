@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        .navbar {
+            background-color: #333;
+            display: flex;
+            justify-content: left;
+            padding: 10px 0;
+            border-bottom: 2px solid #444;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #ff9800;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            width: 150px; 
+            height: 150px;
+            margin: 0 auto;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+            max-height: 100%;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .logo img:hover {
+            transform: scale(1.1);
+        }
+        .signup-login{
+            margin-left: auto; 
+            padding-right: 20px;
+        }
+        .all-container{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+        }
+
+        .donate-container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        .donate-container h3 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .upi-id {
+            font-size: 18px;
+            color: #007BFF;
+            margin-top: 10px;
+        }
+
+        .upi-id::before {
+            content: "UPI ID: ";
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="supream.html">Home</a>
+        <a href="contact.html">Contect Us</a>
+        <a href="socialmedia.html">Social media</a>
+        <a href="donate.html">Donate</a>
+        <a href="collection.html">Our Collection</a>
+        <div class="signup-login">    
+            <a href="signupsup.html">Sign Up</a>
+            <a href="loginsup.html">Log In</a>
+        </div>
+    </div>
+    <div class="logo">
+        <img src="logosup.jpg" alt="Supreme Shoe Expo Logo">
+    </div>
+<div class="all-container">
+    <div class="donate-container">
+        <h3>You can donate us on our UPI ID:</h3>
+        <p class="upi-id">bhimanirushi03@oksbi</p>
+    </div>
+</div>
+</body>
+</html>
