@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>Class File</h1></center>
+    <p id="p1"></p>
+
+    <script>
+        class subject {
+            constructor (subname,sem)
+            {
+                this.subname=subname;
+                this.sem=sem;
+            }
+        }
+        const s1 = new subject ("Python",3);
+        const s2 = new subject ("DSA", 3);
+        document.getElementById('p1').innerHTML=s1.subname+" "+s1.sem;
+    </script>
+</body>
+</html>
