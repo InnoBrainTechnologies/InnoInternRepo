@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Literals</title>
+</head>
+<body>
+    <div id="content"></div>
+
+  <script>
+    const subjects = ["Mathematics", "Science", "History", "English"];
+    const hobbies = ["Reading", "Painting", "Playing Guitar", "Hiking"];
+    const groceryItems = ["Apples", "Milk", "Bread", "Besan", "Rice", "Tomato"];
+
+    const contentDiv = document.getElementById("content");
+
+    const subjectsList = `
+      <h2>Subjects</h2>
+      <ul>
+        ${subjects.map(subject => `<li>${subject}</li>`).join("")}
+      </ul>
+    `;
+
+    const hobbiesList = `
+      <h2>Hobbies</h2>
+      <ul>
+        ${hobbies.map(hobby => `<li>${hobby}</li>`).join("")}
+      </ul>
+    `;
+
+    const groceryList = `
+      <h2>Grocery Items</h2>
+      <ul>
+        ${groceryItems.map(item => `<li>${item}</li>`).join("")}
+      </ul>
+    `;
+
+    contentDiv.innerHTML = subjectsList + hobbiesList + groceryList;
+  </script>
+</body>
+</html>

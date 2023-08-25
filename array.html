@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Order</title>
+  <style>
+    center {
+        border-style: groove;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 10px;
+        background-color: antiquewhite;
+        font-size: medium;
+        font-family: cursive;
+    }
+  </style>
+</head>
+<body>
+ <center>
+    <br>
+    <h1><u>Arrays In JavaScript</u></h1>
+    <h2>Array is the collection of elements of similar data type.</h2>
+    <h2>In this page we will see array elements arrange in alphabetic order and numeric</h2>
+
+  <button id="alphabeticalButton">Alphabetical Order</button>
+  <button id="numericButton">Numeric Order</button>
+  <div id="output"></div>
+</center>
+  <script>
+    
+    var dataArray = ['Orange', 'apple', 'cherry', '2', '10', '20'];
+
+    
+    var alphabeticalButton = document.getElementById('alphabeticalButton');
+    var numericButton = document.getElementById('numericButton');
+    var outputDiv = document.getElementById('output');
+
+    function displayArray(arr) {
+      outputDiv.innerHTML = arr.join(', ');
+    }
+
+  
+    alphabeticalButton.addEventListener('click', function() {
+      var alphabeticalArray = dataArray.slice().sort();
+      displayArray(alphabeticalArray);
+    });
+
+    
+    numericButton.addEventListener('click', function() {
+      var numericArray = dataArray.slice().sort(function(a, b) {
+        return a - b;
+      });
+      displayArray(numericArray);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>Json File</h1></center>
+    <p id="p1"></p>
+
+    <script>
+            let t1='{"students":['+
+                        '{"name":"Kushagra","surname":"Dave"},'+
+                        '{"Karan":"Karan","surname":"Dave"}]}';
+        const obj = JSON.parse(t1);
+        document.getElementById('p1').innerHTML=obj.students[1].name+" "+obj.students[1].surname;
+
+                            
+    </script>
+</body>
+</html>
