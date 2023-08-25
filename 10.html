@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Concepts Example</title>
+  <script>
+    // Get references to the button and output text
+const colorButton = document.getElementById("colorButton");
+const outputText = document.getElementById("outputText");
+
+// Add an event listener to the button
+colorButton.addEventListener("click", changeTextColor);
+
+// Function to change the text color randomly
+function changeTextColor() {
+  const colors = ["red", "blue", "green", "purple", "orange"];
+  const randomIndex = Math.floor(Math.random() * colors.length);
+  const randomColor = colors[randomIndex];
+  
+  outputText.style.color = randomColor;
+}
+
+  </script>
+</head>
+<body>
+  <h1>Welcome to JavaScript Concepts Example</h1>
+  <p>Click the button to change the text color!</p>
+  
+  <button id="colorButton">Change Color</button>
+  <p id="outputText">Hello, world!</p>
+
+</body>
+</html>
