@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DragonArt Signup</title>
+    <style>
+       
+       body {
+            margin: 0;
+            background-color: rgba(240, 240, 240)
+        }
+
+        .header {
+            background-color:  rgba(68, 68, 68);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color:  rgba(51, 51, 51);
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: aliceblue;
+        }
+
+        .logo {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            border: 2px solid white;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .description {
+            background-color: rgba(255, 255, 255, 1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .description h4 {
+            margin: 0;
+            color:  rgba(68, 68, 68, 0.8);
+            font-size: 18px;
+        }
+      
+
+.thank_you {
+    background-color: gray;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid lightgray;
+}
+
+.thank_you p {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+.made{  
+        
+        font-size: large;
+        text-align: left;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        background-color: gray;
+        padding: 0px;
+    } 
+        .signup-login{
+            margin-left: auto; 
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(204, 204, 204, 1);
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: rgba(51, 51, 51, 1);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color:rgba(68, 68, 68, 1);
+        }
+    </style>
+</head>
+<body>
+   <div class="navbar">
+        <a href="dragonart.html">Home</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="suggestion.html">Suggestions</a>
+        <a href="social.html">Our Social Media</a>
+        <div class="signup-login">    
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Log In</a>
+        </div>  
+        
+    </div>
+    <img src="logo.png" alt="Logo" class="logo">
+
+    
+    <div class="container">
+        <h1>Sign Up for DragonArt</h1>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <p>Aready have an account <a href="login.html">Log in</a></p>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

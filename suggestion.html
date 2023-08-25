@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion Box</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: rgba(240, 240, 240)
+        }
+
+        
+        .navbar {
+            background-color:  rgba(51, 51, 51);
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: aliceblue;
+        }
+
+        .logo {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            border: 2px solid white;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .signup-login{
+            margin-left: auto; 
+        }
+        .form-container {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+        }
+
+        .form-contant {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: rgba(51, 51, 51, 1);
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(204, 204, 204, 1);
+            border-radius: 5px;
+            height: 30px;
+        }
+
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgba(52, 152, 219, 1);
+            color: rgba(255, 255, 255, 1);
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .button-link:hover {
+            background-color: rgba(41, 128, 185, 1);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="dragonart.html">Home</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="suggestion.html">Suggestions</a>
+        <a href="social.html">Our Social Media</a>
+        <div class="signup-login">    
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Log In</a>
+        </div>  
+        
+    </div>
+    <img src="logo.png" alt="Logo" class="logo">
+    <div class="form-container">
+    <div class="form-contant">
+        <h1>Give Your Suggestion Below</h1>
+        <input type="text" placeholder="Type your suggestion here">
+        <a href="thankyou.html" target="_blank" class="button-link">submit</a>
+    </div>
+</div>
+</body>
+</html>
