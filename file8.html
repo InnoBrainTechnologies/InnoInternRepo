@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>documents</title>
+</head>
+<body>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+
+<script>
+let hd="List of Lanugages";
+let lang=["Java","C++","Python"];
+
+let ht=`<h2> ${hd}</h2><ul>`;
+for(const i of lang)
+{
+    ht+=`<li>${i}</li>`;
+}
+ht+='</ul>';
+document.getElementById("p1").innerHTML=ht;
+</script>
+</body>
+</html>
