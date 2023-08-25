@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number Display</title>
+</head>
+<body>
+  <button id="alphabeticalButton">Alphabetical Order</button>
+  <button id="numericButton">Numeric Order</button>
+  <div id="output"></div>
+
+  <script>
+    // Array of numbers
+    var numbers = [9, 4, 7, 2, 1, 5, 8, 3, 6];
+
+    // Get references to the buttons and output div
+    var alphabeticalButton = document.getElementById("alphabeticalButton");
+    var numericButton = document.getElementById("numericButton");
+    var outputDiv = document.getElementById("output");
+
+    // Function to display numbers in alphabetical order
+    alphabeticalButton.addEventListener("click", function() {
+      var sortedNumbers = numbers.slice().sort(function(a, b) {
+        return a - b;
+      });
+      outputDiv.textContent = "Alphabetical Order: " + sortedNumbers.join(", ");
+    });
+
+    // Function to display numbers in numeric order
+    numericButton.addEventListener("click", function() {
+      var sortedNumbers = numbers.slice().sort(function(a, b) {
+        return a - b;
+      });
+      outputDiv.textContent = "Numeric Order: " + sortedNumbers.join(", ");
+    });
+  </script>
+</body>
+</html>
