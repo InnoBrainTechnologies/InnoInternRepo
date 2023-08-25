@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link your custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Shoe Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="project.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="container text-center bg-dark ">
+
+            <h1>Welcome to our Shoe Store</h1>
+        </div>
+    </section>
+ 
+    <!-- Shop section -->
+    <section id="shop" class="shop">
+        <div class="container">
+            <div class="row">
+                <!-- Repeat this block for each shoe item -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="shoe1.jpg" class="card-img-top " alt="Shoe 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Limited Edition</h5>
+                            <p class="card-text">Description of the shoe.</p>
+                            <a href="shop.html" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="shoe7.jpg" class="card-img-top" alt="Shoe 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Formal Shoes</h5>
+                            <p class="card-text">Description of the shoe.</p>
+                            <a href="shop.html" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="shoe6.jpg" class="card-img-top" alt="Shoe 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nike Dunk</h5>
+                            <p class="card-text">Description of the shoe.</p>
+                            <a href="shop.html" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>x
+                </div>
+                <!-- End of repeatable block -->
+            </div>
+        </div>
+    </section>
+</body>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2023 Shoe Store. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Link Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Your custom JavaScript -->
+<script src="script.js"></script>
+</body>
+
+</html>
