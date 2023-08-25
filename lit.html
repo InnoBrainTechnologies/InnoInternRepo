@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Template Literals</title>
+</head>
+<body>
+  <h1>Lists Using Template Literals</h1>
+
+  <h2>Subjects:</h2>
+  <ul id="subjectsList"></ul>
+
+  <h2>Hobbies:</h2>
+  <ul id="hobbiesList"></ul>
+
+  <h2>Grocery Items:</h2>
+  <ul id="groceryList"></ul>
+
+  <script>
+    const subjects = ['Java', 'C++', 'Python'];
+    const hobbies = ['Reading', 'Painting', 'Gardening'];
+    const groceryItems = ['Apples', 'Milk', 'Bread', 'Eggs', 'Rice'];
+
+    const subjectsList = document.getElementById('subjectsList');
+    const hobbiesList = document.getElementById('hobbiesList');
+    const groceryList = document.getElementById('groceryList');
+
+    // Populate subjects list using template literals
+    subjects.forEach(subject => {
+      subjectsList.innerHTML += `<li>${subject}</li>`;
+    });
+
+    // Populate hobbies list using template literals
+    hobbies.forEach(hobby => {
+      hobbiesList.innerHTML += `<li>${hobby}</li>`;
+    });
+
+    // Populate grocery items list using template literals
+    groceryItems.forEach(item => {
+      groceryList.innerHTML += `<li>${item}</li>`;
+    });
+  </script>
+</body>
+</html>
