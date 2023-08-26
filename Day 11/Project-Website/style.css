@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root {
-    --color: #006da8;
+    --color: #54ff1b;
 }
 * {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', verdana;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -43,8 +43,8 @@ section {
 }
 .btn {
     padding: .7rem 3rem;
-    background: #006da8;
-    color: #fff;
+    background: #54ff1b;
+    color: black;
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
@@ -116,8 +116,8 @@ header .navbar ul li a {
     display: block;
     padding: 1rem;
     margin: 1.5rem 0;
-    background: #024e77;
-    color: #fff;
+    background: #54ff1b;
+    color: #000000;
     font-size: 2rem;
     border-radius: 10px;
 }
@@ -200,6 +200,7 @@ header .navbar ul li a:hover {
     text-align: center;
     padding: 2rem;
     margin: 2rem;
+    border-radius: 20px;
 }
 .about .row .counter .box span {
     font-size: 4rem;
@@ -314,7 +315,7 @@ header .navbar ul li a:hover {
     padding: 1.5rem;
     margin: 1rem 0;
     background: #ffffff;
-    color: #ffffff;
+    color: #000000;
     text-transform: none;
     border-radius: 10px;
     font-size: 1.7rem;
@@ -329,7 +330,7 @@ header .navbar ul li a:hover {
 }
 .contact .row .content .title {
     text-transform: uppercase;
-    color: #ffffff;
+    color: #000000;
     font-size: 3rem;
     padding-bottom: 2rem;
 }
