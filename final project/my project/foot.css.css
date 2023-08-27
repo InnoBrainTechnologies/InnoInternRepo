@@ -1,0 +1,46 @@
+ .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.website-name {
+    font-weight: bold;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.contact-info {
+    color: #00bfff;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+.p1{
+    background-color:lightblue;
+    color:white;
+    font-size:30px;
+}
+.h{
+    font-size: 40px;
+}
