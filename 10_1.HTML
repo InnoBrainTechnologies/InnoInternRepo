@@ -1,0 +1,27 @@
+//ClassFile
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+<script>
+class Subject{
+
+        constructor(subname,sem){
+            this.subname=subname;
+            this.sem=sem;
+        }
+}
+const sub1=new Subject("Java",5);
+const sub2=new Subject("Python",1);
+
+document.getElementById('p1').innerHTML=sub1.subname+" "+sub1.sem;
+document.getElementById('p2').innerHTML=sub2.subname+" "+sub2.sem;
+</script>
+</body>
+</html>
