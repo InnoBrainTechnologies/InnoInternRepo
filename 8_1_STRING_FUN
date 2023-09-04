@@ -10,34 +10,34 @@
 <p id="p2"></p>
 
 <script>
-let str1="Hello ";
-let str2="Anil";
-document.getElementById('p1').innerHTML=str1+str2+" From InnoBrain";
+let str1="MOVIE";
+let str2="GADAR 2";
+document.getElementById('p1').innerHTML=str1+str2+" From BOLLYWOOD";
 document.getElementById('p2').innerHTML=str1.length;
-document.getElementById('p2').innerHTML="Hello "+
-"InnoBrain"
+document.getElementById('p2').innerHTML="ANOTHER IS"+
+"HOLLYWOOD"
 /********************************************************/
-
-
-/*let str1="Hello";
-let strobj=new String("Hello");
-document.getElementById('p1').innerHTML=(str1==strobj); */
-
-/*******************************************/
-
-//Slice Method
-//let t1="Java,JavaScript,Python,C++,C#";
-//let t2=t1.slice(-10,-5);
-//document.getElementById('p1').innerHTML=t2;
-//document.getElementById('p1').innerHTML=t2;
-
-/*******************************************/
-
 //substring() substr()
 
  //let t1="x1,y1,x2,y2"
  //let t2=t1.substr(3,6);
  //document.getElementById('p1').innerHTML=t2;
+
+
+/*******************************************/
+//trimStart
+/*let text = "     Hello World!     ";
+let result = text.trimStart();
+document.getElementById("p1").innerHTML =
+"Length text1 = " + text.length + "<br>Length text2 = " + result.length; */
+
+/*******************************************/
+
+
+
+/*let str1="Hello";
+let strobj=new String("Hello");
+document.getElementById('p1').innerHTML=(str1==strobj); */
 
 /*******************************************/
 
@@ -47,11 +47,12 @@ document.getElementById('p1').innerHTML=(str1==strobj); */
  //document.getElementById('p1').innerHTML=newt1;
 
 /*******************************************/
-//replace()
- //let t1="Java, python ,C#, Java";
-//let newt1=t1.replace("/java/ig","JavaScript");
- //document.getElementById('p1').innerHTML=newt1;
+//concat()
 
+//let t1="Hello";
+//let t2="InnoBrain";
+//let t3=t1.concat(" ",t2);
+//document.getElementById('p1').innerHTML=t3;
 /*******************************************/
 //toLowerCase
 //let t1="Java, python ,C#, Java";
@@ -65,12 +66,12 @@ document.getElementById('p1').innerHTML=(str1==strobj); */
 //document.getElementById('p1').innerHTML=newt1;
 
 /*******************************************/
-//concat()
 
-//let t1="Hello";
-//let t2="InnoBrain";
-//let t3=t1.concat(" ",t2);
-//document.getElementById('p1').innerHTML=t3;
+
+//replace()
+ //let t1="Java, python ,C#, Java";
+//let newt1=t1.replace("/java/ig","JavaScript");
+ //document.getElementById('p1').innerHTML=newt1;
 
 /*******************************************/
 //trim 
@@ -82,11 +83,13 @@ document.getElementById("p2").innerHTML = result;*/
 
 /*******************************************/
 
-//trimStart
-/*let text = "     Hello World!     ";
-let result = text.trimStart();
-document.getElementById("p1").innerHTML =
-"Length text1 = " + text.length + "<br>Length text2 = " + result.length; */
+
+
+//Slice Method
+//let t1="Java,JavaScript,Python,C++,C#";
+//let t2=t1.slice(-10,-5);
+//document.getElementById('p1').innerHTML=t2;
+//document.getElementById('p1').innerHTML=t2;
 
 /*****************************************/
 //trimEnd
@@ -172,12 +175,14 @@ document.getElementById("p1").innerHTML = result; */
 
 /*****************************************/
 
-//Global match
-/*let text = "Is this all there is?";
-let pattern = /is/g; 
-let result = text.match(pattern);
 
-document.getElementById("p1").innerHTML = result */
+//Template Literals
+/* let firstName = "John";
+let lastName = "Doe";
+
+let text = `Welcome ${firstName}, ${lastName}!`;
+
+document.getElementById("p1").innerHTML = text; */
 
 /*****************************************/
 //split
@@ -187,6 +192,13 @@ const myArray = text.split("");
 document.getElementById("p1").innerHTML = myArray; */
 
 /*****************************************/
+
+//lastIndexOf
+/*let text = "Hello planet earth, you are a great planet.";
+let result = text.lastIndexOf("planet");
+
+document.getElementById("p1").innerHTML = result; */
+/*****************************************/
 //indexOf
 /*let text = "Hello world, welcome to the universe.";
 let result = text.indexOf("welcome");
@@ -194,22 +206,13 @@ let result = text.indexOf("welcome");
 document.getElementById("p2").innerHTML = result; */
 
 /*****************************************/
+//Global match
+/*let text = "Is this all there is?";
+let pattern = /is/g; 
+let result = text.match(pattern);
 
-//lastIndexOf
-/*let text = "Hello planet earth, you are a great planet.";
-let result = text.lastIndexOf("planet");
+document.getElementById("p1").innerHTML = result */
 
-document.getElementById("p1").innerHTML = result; */
-
-/*****************************************/
-
-//Template Literals
-/* let firstName = "John";
-let lastName = "Doe";
-
-let text = `Welcome ${firstName}, ${lastName}!`;
-
-document.getElementById("p1").innerHTML = text; */
 
 /*****************************************/
 
