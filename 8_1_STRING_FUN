@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+
+<script>
+let str1="Hello ";
+let str2="Anil";
+document.getElementById('p1').innerHTML=str1+str2+" From InnoBrain";
+document.getElementById('p2').innerHTML=str1.length;
+document.getElementById('p2').innerHTML="Hello "+
+"InnoBrain"
+/********************************************************/
+
+
+/*let str1="Hello";
+let strobj=new String("Hello");
+document.getElementById('p1').innerHTML=(str1==strobj); */
+
+/*******************************************/
+
+//Slice Method
+//let t1="Java,JavaScript,Python,C++,C#";
+//let t2=t1.slice(-10,-5);
+//document.getElementById('p1').innerHTML=t2;
+//document.getElementById('p1').innerHTML=t2;
+
+/*******************************************/
+
+//substring() substr()
+
+ //let t1="x1,y1,x2,y2"
+ //let t2=t1.substr(3,6);
+ //document.getElementById('p1').innerHTML=t2;
+
+/*******************************************/
+
+//replaceAll()
+ //let t1="Java, python ,C#, Java";
+ //let newt1=t1.replaceAll("Java","JavaScript");
+ //document.getElementById('p1').innerHTML=newt1;
+
+/*******************************************/
+//replace()
+ //let t1="Java, python ,C#, Java";
+//let newt1=t1.replace("/java/ig","JavaScript");
+ //document.getElementById('p1').innerHTML=newt1;
+
+/*******************************************/
+//toLowerCase
+//let t1="Java, python ,C#, Java";
+ //newt1=t1.toLowerCase();
+ //document.getElementById('p1').innerHTML=newt1;
+
+/*******************************************/
+//toUpperCase
+//let t1="Java, python ,C#, Java";
+//newt1=t1.toUpperCase();
+//document.getElementById('p1').innerHTML=newt1;
+
+/*******************************************/
+//concat()
+
+//let t1="Hello";
+//let t2="InnoBrain";
+//let t3=t1.concat(" ",t2);
+//document.getElementById('p1').innerHTML=t3;
+
+/*******************************************/
+//trim 
+/*let text = "     Hello World!     ";
+let result = text.trim();
+
+document.getElementById("p1").innerHTML = text;
+document.getElementById("p2").innerHTML = result;*/
+
+/*******************************************/
+
+//trimStart
+/*let text = "     Hello World!     ";
+let result = text.trimStart();
+document.getElementById("p1").innerHTML =
+"Length text1 = " + text.length + "<br>Length text2 = " + result.length; */
+
+/*****************************************/
+//trimEnd
+/*let text = "     Hello World!     ";
+let result = text.trimEnd();
+document.getElementById("p1").innerHTML =
+"Length text1 = " + text.length + "<br>Length text2 = " + result.length; */
+
+/*****************************************/
+//padStart
+ /*let t1="IB";
+ let t2=t1.padStart(10,"#");
+ document.getElementById('p1').innerHTML=t2; */
+
+/*****************************************/
+ //padEnd
+ //let t1="IB";
+ //let t2=t1.padEnd(10,"#");
+ //document.getElementById('p1').innerHTML=t2;
+ 
+ 
+/*****************************************/
+
+//charAt()
+
+/*let t1="t1,t2,t3,t4";
+ let t2=t1.charAt(7);
+const myArr=t1.split(",");
+ let char=t1[1];
+ document.getElementById('p1').innerHTML=myArr[0]; */
+ 
+ /*****************************************/
+ //search
+ /*let str="Hello, This is Anil from InnoBrain Anil Technologies..";
+ let ind=str.search("Anil");
+document.getElementById('p1').innerHTML=ind; */
+
+/*****************************************/
+//startsWith
+/*let text = "Hello world, welcome to the universe.";
+let result = text.startsWith("Hello");
+
+document.getElementById("p1").innerHTML = result; */
+
+/*****************************************/
+////endsWith
+//let text = "Hello World";
+//let result = text.endsWith("world");
+
+//document.getElementById("p1").innerHTML = result;
+
+/*****************************************/
+//back-tick
+
+/*let num1=10;
+let num2=20;
+let str1="Hello";
+let str2="InnoBrain"
+let t1=`${str1},${str2},${num1+num2}`;
+document.getElementById('p1').innerHTML=t1; */ 
+
+
+/*****************************************/
+
+/*let hd="List of Lanugages";
+let lang=["Java","C++","Python"];
+
+let ht=`<h2> ${hd}</h2><ul>`;
+for(const i of lang)
+{
+    ht+=`<li>${i}</li>`;
+}
+ht+='</ul>';
+document.getElementById("p1").innerHTML=ht; */
+
+/*****************************************/
+//Case insensitive
+/*let text = "Visit W3Schools";
+let pattern = /w3schools/i;
+let result = text.match(pattern);
+
+document.getElementById("p1").innerHTML = result; */
+
+/*****************************************/
+
+//Global match
+/*let text = "Is this all there is?";
+let pattern = /is/g; 
+let result = text.match(pattern);
+
+document.getElementById("p1").innerHTML = result */
+
+/*****************************************/
+//split
+/*let text = "How are you doing today?";
+const myArray = text.split("");
+
+document.getElementById("p1").innerHTML = myArray; */
+
+/*****************************************/
+//indexOf
+/*let text = "Hello world, welcome to the universe.";
+let result = text.indexOf("welcome");
+
+document.getElementById("p2").innerHTML = result; */
+
+/*****************************************/
+
+//lastIndexOf
+/*let text = "Hello planet earth, you are a great planet.";
+let result = text.lastIndexOf("planet");
+
+document.getElementById("p1").innerHTML = result; */
+
+/*****************************************/
+
+//Template Literals
+/* let firstName = "John";
+let lastName = "Doe";
+
+let text = `Welcome ${firstName}, ${lastName}!`;
+
+document.getElementById("p1").innerHTML = text; */
+
+/*****************************************/
+
+</script>
+</body>
+</html>
