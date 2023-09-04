@@ -1,0 +1,26 @@
+<html>
+
+<body>
+
+    <h2>JavaScript Template Literals</h2>
+
+
+    <p id="demo"></p>
+    <script>
+
+
+        let hd = "List of grocery items ";
+        let gro = ["Apple", "Milk", "Pasta", "Rice", "Fruit"];
+
+        let ht = `<h2> ${hd}</h2><ul>`;
+        for (const i of gro) {
+            ht += `<li>${i}</li>`;
+        }
+        ht += '</ul>';
+        document.getElementById("demo").innerHTML = ht;
+
+    </script>
+
+</body>
+
+</html>
