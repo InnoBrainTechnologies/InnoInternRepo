@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Functions Example</title>
+<style>
+    p{
+        font-size: larger;
+    }
+
+
+</style>
+</head>
+
+<body>
+  <h1>String Functions Example</h1>
+
+  <p id="originalString">Original String: "Hello, World!"</p>
+
+  <h2>JavaScript String Functions</h2>
+  <p id="length"></p>
+  <p id="toUpperCase"></p>
+  <p id="toLowerCase"></p>
+  <p id="charAt"></p>
+  <p id="substring"></p>
+  <p id="indexOf"></p>
+  <p id="lastIndexOf"></p>
+  <p id="replace"></p>
+  <p id="trim"></p>
+  <p id="concat"></p>
+  <p id="split"></p>
+
+  <script>
+    const originalString = "Hello, World!";
+
+    // Length of the string
+    document.getElementById("length").textContent = `Length: ${originalString.length}`;
+
+    // Convert to uppercase
+    document.getElementById("toUpperCase").textContent = `Uppercase: ${originalString.toUpperCase()}`;
+
+    // Convert to lowercase
+    document.getElementById("toLowerCase").textContent = `Lowercase: ${originalString.toLowerCase()}`;
+
+    // Character at a specific index
+    const charIndex = 7;
+    document.getElementById("charAt").textContent = `Character at index ${charIndex}: ${originalString.charAt(charIndex)}`;
+
+    // Substring
+    const startIndex = 7;
+    const endIndex = 12;
+    document.getElementById("substring").textContent = `Substring from index ${startIndex} to ${endIndex}: ${originalString.substring(startIndex, endIndex)}`;
+
+    // Index of a substring
+    const searchSubstring = "World";
+    document.getElementById("indexOf").textContent = `Index of "${searchSubstring}": ${originalString.indexOf(searchSubstring)}`;
+
+    // Last index of a substring
+    document.getElementById("lastIndexOf").textContent = `Last index of "${searchSubstring}": ${originalString.lastIndexOf(searchSubstring)}`;
+
+    // Replace a substring
+    const replacement = "Universe";
+    document.getElementById("replace").textContent = `Replace "World" with "${replacement}": ${originalString.replace(searchSubstring, replacement)}`;
+
+    // Concatenate strings
+    const appendString = " Welcome!";
+    document.getElementById("concat").textContent = `Concatenated with "${appendString}": ${originalString.concat(appendString)}`;
+
+    // Trim whitespace
+    const stringWithWhitespace = "   Some spaces around   ";
+    document.getElementById("trim").textContent = `Trimmed: "${stringWithWhitespace.trim()}"`;
+
+    // Split into an array
+    const splitString = "one,two,three,four,five";
+    const splitArray = splitString.split(",");
+    document.getElementById("split").textContent = `Split into array: ${splitArray}`;
+  </script>
+</body>
+</html>

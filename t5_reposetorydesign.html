@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        @media screen and(max-width: 700px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Responsive Design Example</h1>
+        </div>
+        <div class="content">
+            <p>This is a simple example of a responsive design. Resize your browser window to see how the layout adapts to different screen sizes.</p>
+        </div>
+    </div>
+</body>
+</html>
